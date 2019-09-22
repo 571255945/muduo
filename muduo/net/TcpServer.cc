@@ -23,7 +23,7 @@ TcpServer::TcpServer(EventLoop* loop,
                      const InetAddress& listenAddr,
                      const string& nameArg,
                      Option option)
-  : loop_(CHECK_NOTNULL(loop)),
+  : loop_(CHECK_NOTNULL(loop)),//这里这判断看代码只是记录了日志啊，loop可能为空啊，如果为空，后面为什么没有判断呢？？？
     ipPort_(listenAddr.toIpPort()),
     name_(nameArg),
     acceptor_(new Acceptor(loop, listenAddr, option == kReusePort)),
@@ -94,6 +94,14 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
   conn->setWriteCompleteCallback(writeCompleteCallback_);
   conn->setCloseCallback(
       std::bind(&TcpServer::removeConnection, this, _1)); // FIXME: unsafe
+
+  //runInLoop内部只是判断了下loop是否存在，然后就调起了回调connectEstablished，
+  // 那么链接是怎么建立的呢？建立后在哪里发出了链接建立的信号的
+  //
+  //TcpServer的构造函数中将函数newConnection注册入回调，然后在Acceptor中监听了链接，
+  // 当读到数据时就回调newConnection，所以到这里链接可定建立了
+  //  acceptor_->setNewConnectionCallback(
+  //      std::bind(&TcpServer::newConnection, this, _1, _2));
   ioLoop->runInLoop(std::bind(&TcpConnection::connectEstablished, conn));
 }
 

@@ -13,6 +13,10 @@ target_link_libraries(simple_echo muduo_net)
 add_executable(simple_time time/time.cc time/main.cc)
 target_link_libraries(simple_time muduo_net)
 
+#test yuan
+add_executable(my_echo my_echo_test/my_echo.cpp my_echo_test/my_echo_main.cpp)
+target_link_libraries(my_echo muduo_net)
+
 add_executable(simple_allinone
   allinone/allinone.cc
   chargen/chargen.cc

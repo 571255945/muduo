@@ -148,7 +148,7 @@ template <typename T>
 T* CheckNotNull(Logger::SourceFile file, int line, const char *names, T* ptr)
 {
   if (ptr == NULL)
-  {
+  {//Logger为局部变量，logger在析构时回去判断level的类型，如果level是FATAL就强制结束程序，所以不可能返回空指针
    Logger(file, line, Logger::FATAL).stream() << names;
   }
   return ptr;

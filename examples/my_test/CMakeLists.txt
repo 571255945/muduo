@@ -1,0 +1,2 @@
+add_executable(my_function_test my_function_test.cpp)
+#target_link_libraries(my_function_tst muduo_net)

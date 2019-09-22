@@ -39,6 +39,8 @@ class Channel : noncopyable
   Channel(EventLoop* loop, int fd);
   ~Channel();
 
+  //std::function 也有move语义？？
+  //move用来保存function对象，效率更高
   void handleEvent(Timestamp receiveTime);
   void setReadCallback(ReadEventCallback cb)
   { readCallback_ = std::move(cb); }

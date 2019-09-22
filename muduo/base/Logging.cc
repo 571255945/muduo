@@ -101,7 +101,7 @@ void defaultOutput(const char* msg, int len)
 }
 
 void defaultFlush()
-{
+{//刷新缓冲区，强制将缓冲区中的内容输出
   fflush(stdout);
 }
 

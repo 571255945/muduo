@@ -410,10 +410,13 @@ void TcpConnection::handleClose()
   loop_->assertInLoopThread();
   LOG_TRACE << "fd = " << channel_->fd() << " state = " << stateToString();
   assert(state_ == kConnected || state_ == kDisconnecting);
+
+  //为什么没有直接关闭连接呢？
   // we don't close fd, leave it to dtor, so we can find leaks easily.
   setState(kDisconnected);
   channel_->disableAll();
 
+  //这里为什么去多做一次引用呢？
   TcpConnectionPtr guardThis(shared_from_this());
   connectionCallback_(guardThis);
   // must be the last line

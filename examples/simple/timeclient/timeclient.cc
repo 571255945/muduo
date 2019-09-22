@@ -69,11 +69,16 @@ class TimeClient : noncopyable
 
 int main(int argc, char* argv[])
 {
+    //为了调试方便改写一下
+    //LOG_INFO<<"sizeof(int32_t) = "<<sizeof(int32_t) ;//sizeof(int32_t) = 4
+    argc=2;
+
   LOG_INFO << "pid = " << getpid();
   if (argc > 1)
   {
     EventLoop loop;
-    InetAddress serverAddr(argv[1], 2037);
+//      InetAddress serverAddr(argv[1], 2037);
+      InetAddress serverAddr("127.0.0.1", 2037);
 
     TimeClient timeClient(&loop, serverAddr);
     timeClient.connect();

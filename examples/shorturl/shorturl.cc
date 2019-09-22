@@ -77,7 +77,7 @@ void onRequest(const HttpRequest& req, HttpResponse* resp)
 
 int main(int argc, char* argv[])
 {
-  redirections["/1"] = "http://chenshuo.com";
+  redirections["/1"] = "https://blog.csdn.net/Solstice/article/details/8493251";
   redirections["/2"] = "http://blog.csdn.net/Solstice";
 
   int numThreads = 0;

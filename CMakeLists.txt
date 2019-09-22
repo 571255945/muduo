@@ -64,7 +64,7 @@ find_library(BOOSTSYSTEM_LIBRARY NAMES boost_system)
 find_path(TCMALLOC_INCLUDE_DIR gperftools/heap-profiler.h)
 find_library(TCMALLOC_LIBRARY NAMES tcmalloc_and_profiler)
 find_path(HIREDIS_INCLUDE_DIR hiredis/hiredis.h)
-find_library(HIREDIS_LIBRARY NAMES hiredis)
+#find_library(HIREDIS_LIBRARY NAMES hiredis)
 find_path(GD_INCLUDE_DIR gd.h)
 find_library(GD_LIBRARY NAMES gd)
 find_program(THRIFT_COMPILER thrift)
@@ -95,6 +95,8 @@ endif()
 if(THRIFT_COMPILER AND THRIFT_INCLUDE_DIR AND THRIFT_LIBRARY)
   message(STATUS "found thrift")
 endif()
+
+include_directories(/home/yuanye/WorkSpace/Git)
 
 include_directories(${Boost_INCLUDE_DIRS})
 

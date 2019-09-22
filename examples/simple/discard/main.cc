@@ -8,13 +8,16 @@
 using namespace muduo;
 using namespace muduo::net;
 
+
+
 int main()
 {
-  LOG_INFO << "pid = " << getpid();
-  EventLoop loop;
-  InetAddress listenAddr(2009);
-  DiscardServer server(&loop, listenAddr);
-  server.start();
-  loop.loop();
-}
+    //getpid获取当前进程ID
+    LOG_INFO<<"pid = "<<getpid();
+    muduo::net::EventLoop loop;
+    InetAddress address(2019);
 
+    DiscardServer server(&loop,address);
+    server.start();
+    loop.loop();
+}

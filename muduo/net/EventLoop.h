@@ -113,7 +113,12 @@ class EventLoop : noncopyable
       abortNotInLoopThread();
     }
   }
+
+  //threadId_(CurrentThread::tid()),难道threadId_ == CurrentThread::tid()还会不成立吗？？？
+  //推测：threadId_(CurrentThread::tid()是在构造时初始化的，那么下面的这个等式只能说明Loop已经构造了
+  //所以这个判断的意思可能是要判断loop是否存在
   bool isInLoopThread() const { return threadId_ == CurrentThread::tid(); }
+
   // bool callingPendingFunctors() const { return callingPendingFunctors_; }
   bool eventHandling() const { return eventHandling_; }
 

@@ -29,8 +29,10 @@ void TimeServer::onConnection(const muduo::net::TcpConnectionPtr& conn)
   if (conn->connected())
   {
     time_t now = ::time(NULL);
+//    //从1970-01-01 00:00:00Z到现在的秒数
     int32_t be32 = sockets::hostToNetwork32(static_cast<int32_t>(now));
     conn->send(&be32, sizeof be32);
+//    sleep(5);//5秒
     conn->shutdown();
   }
 }
