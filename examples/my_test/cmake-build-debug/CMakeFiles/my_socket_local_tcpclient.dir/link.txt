@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_local_tcpclient.dir/my_socket_local_tcpclient.o  -o my_socket_local_tcpclient 

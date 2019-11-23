@@ -16,6 +16,8 @@ using namespace muduo::net;
 
 Poller* Poller::newDefaultPoller(EventLoop* loop)
 {
+    //getenv：取得环境变量内容，什么意思呢？如果有ＭUDUO_USE_POLL这个环境变量就用POLL，
+    // MUDUO_USE_POLL这个环境变量又是什么？类似与宏定义吗？
   if (::getenv("MUDUO_USE_POLL"))
   {
     return new PollPoller(loop);

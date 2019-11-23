@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_common_test.dir/my_common_test.o  -o my_common_test 

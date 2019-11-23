@@ -27,6 +27,13 @@ namespace net
 class EventLoop;
 class EventLoopThread;
 
+//用one loop per thread思想实现多线程TcpServer的关键步骤是在新建的TcpConnection时从
+// event loop pool里挑选一个loop给TcpConnection用。就是说多线程TcpServer自己的EventLoop
+// 只用来接受新连接，而新连接会用其他EventLoop来执行IO
+
+// 其中start函数用来向loops_内添加内容（由于都是nocopyable，所以智能拷贝指针），最主要的函数是getNextLoop：
+// 记录一个next_下标，采用轮询的方式返回pool中的EventLoopThread，每个TcpServer都有自己的EventLoopThreadPool
+//原文链接：https://blog.csdn.net/xufeilong520xu/article/details/74941384
 class EventLoopThreadPool : noncopyable
 {
  public:

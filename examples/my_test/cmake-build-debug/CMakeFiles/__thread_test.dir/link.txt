@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/__thread_test.dir/my__thread_test.cpp.o  -o __thread_test 

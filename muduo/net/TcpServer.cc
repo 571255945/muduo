@@ -32,6 +32,7 @@ TcpServer::TcpServer(EventLoop* loop,
     messageCallback_(defaultMessageCallback),
     nextConnId_(1)
 {
+    //接收者acceptor用来处理socket数据,原始的socket数据是在socketops.cc中处理的
   acceptor_->setNewConnectionCallback(
       std::bind(&TcpServer::newConnection, this, _1, _2));
 }
@@ -70,7 +71,10 @@ void TcpServer::start()
 
 void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
 {
+    //判断是不是当前线程（怎么会不是呢？）
   loop_->assertInLoopThread();
+
+  // 从线程池中获取一个EventLoop（因为EventLoop对应一个线程），这里相当于获取了一个线程
   EventLoop* ioLoop = threadPool_->getNextLoop();
   char buf[64];
   snprintf(buf, sizeof buf, "-%s#%d", ipPort_.c_str(), nextConnId_);
@@ -81,6 +85,8 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
            << "] - new connection [" << connName
            << "] from " << peerAddr.toIpPort();
   InetAddress localAddr(sockets::getLocalAddr(sockfd));
+
+  // 为当前接收到的连接请求创建一个TcpConnection对象，将TcpConnection对象与分配的（ioLoop）线程绑定
   // FIXME poll with zero timeout to double confirm the new connection
   // FIXME use make_shared if necessary
   TcpConnectionPtr conn(new TcpConnection(ioLoop,
@@ -89,6 +95,9 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
                                           localAddr,
                                           peerAddr));
   connections_[connName] = conn;
+
+    // 将（用户定义的）连接建立回调函数、消息接收回调函数注册到TcpConnection对象中
+    // 由此可知TcpConnection才是muduo库对与网络连接的核心处理
   conn->setConnectionCallback(connectionCallback_);
   conn->setMessageCallback(messageCallback_);
   conn->setWriteCompleteCallback(writeCompleteCallback_);
@@ -102,6 +111,10 @@ void TcpServer::newConnection(int sockfd, const InetAddress& peerAddr)
   // 当读到数据时就回调newConnection，所以到这里链接可定建立了
   //  acceptor_->setNewConnectionCallback(
   //      std::bind(&TcpServer::newConnection, this, _1, _2));
+
+    // 对于新建连接的socket描述符，还需要设置期望监控的事件（POLLIN | POLLPRI），
+    // 并且将此socket描述符放入poll函数的监控描述符集合中，用于等待接收客户端从此连接上发送来的消息
+    // 这些工作，都是由TcpConnection::connectEstablished函数完成。
   ioLoop->runInLoop(std::bind(&TcpConnection::connectEstablished, conn));
 }
 

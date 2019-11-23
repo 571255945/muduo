@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\http\;CMake Files\inspect\;CMake Files\protobuf\;CMake Files\protorpc\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_net">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/libmuduo_net.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 muduo_net"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_net/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/libmuduo_net.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 muduo_net/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_http">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/libmuduo_http.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 muduo_http"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_http/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/libmuduo_http.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 muduo_http/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/http/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_inspect">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/libmuduo_inspect.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 muduo_inspect"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_inspect/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/libmuduo_inspect.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 muduo_inspect/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/inspect/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protobuf_codec">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/libmuduo_protobuf_codec.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 muduo_protobuf_codec"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protobuf_codec/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/libmuduo_protobuf_codec.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 muduo_protobuf_codec/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protobuf/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protorpc">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/libmuduo_protorpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 muduo_protorpc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protorpc/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/libmuduo_protorpc.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 muduo_protorpc/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protorpc_wire">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/libmuduo_protorpc_wire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 muduo_protorpc_wire"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_protorpc_wire/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/libmuduo_protorpc_wire.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 muduo_protorpc_wire/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Acceptor.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Acceptor.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Buffer.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Buffer.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Channel.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Channel.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Connector.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Connector.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoop.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoop.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoopThread.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoopThread.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoopThreadPool.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/EventLoopThreadPool.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/InetAddress.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/InetAddress.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Poller.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Poller.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Socket.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Socket.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/SocketsOps.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/SocketsOps.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpClient.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpClient.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpConnection.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpConnection.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpServer.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TcpServer.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Timer.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/Timer.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TimerQueue.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/TimerQueue.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/rpc.pb.cc">
+			<Option target="muduo_protorpc_wire"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/cmake-build-debug/protorpc/rpc.pb.cc.rule">
+			<Option target="muduo_protorpc_wire"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpContext.cc">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpContext.h">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpResponse.cc">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpResponse.h">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpServer.cc">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/HttpServer.h">
+			<Option target="muduo_http"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/Inspector.cc">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/Inspector.h">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/PerformanceInspector.cc">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/PerformanceInspector.h">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/ProcessInspector.cc">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/ProcessInspector.h">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/SystemInspector.cc">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/SystemInspector.h">
+			<Option target="muduo_inspect"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/poller/DefaultPoller.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/poller/EPollPoller.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/poller/EPollPoller.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/poller/PollPoller.cc">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/poller/PollPoller.h">
+			<Option target="muduo_net"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protobuf/ProtobufCodecLite.cc">
+			<Option target="muduo_protobuf_codec"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protobuf/ProtobufCodecLite.h">
+			<Option target="muduo_protobuf_codec"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcChannel.cc">
+			<Option target="muduo_protorpc"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcChannel.h">
+			<Option target="muduo_protorpc"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcCodec.cc">
+			<Option target="muduo_protorpc_wire"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcCodec.h">
+			<Option target="muduo_protorpc_wire"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcServer.cc">
+			<Option target="muduo_protorpc"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/RpcServer.h">
+			<Option target="muduo_protorpc"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/http/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\http\"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/inspect/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\inspect\"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protobuf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/net/protorpc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\protorpc\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

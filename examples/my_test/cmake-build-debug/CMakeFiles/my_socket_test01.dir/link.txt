@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_test01.dir/my_socket_test01.o  -o my_socket_test01 

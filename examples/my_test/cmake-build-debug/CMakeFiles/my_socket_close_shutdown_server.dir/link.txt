@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_close_shutdown_server.dir/my_socket_close_shutdown_server.o  -o my_socket_close_shutdown_server 

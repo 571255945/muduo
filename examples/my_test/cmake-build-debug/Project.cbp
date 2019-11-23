@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_multi_thread_server02">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_multi_thread_server02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_multi_thread_server02"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_multi_thread_server02/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_multi_thread_server02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_multi_thread_server02/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_close_shutdown_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_close_shutdown_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_close_shutdown_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_close_shutdown_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_close_shutdown_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_close_shutdown_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_tcp_keep_alive_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_tcp_keep_alive_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_tcp_keep_alive_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_tcp_keep_alive_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_tcp_keep_alive_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_tcp_keep_alive_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_close_shutdown_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_close_shutdown_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_close_shutdown_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_close_shutdown_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_close_shutdown_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_close_shutdown_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_udpserver">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_udpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_udpserver"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_udpserver/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_udpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_udpserver/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_exception_server01">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_exception_server01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_exception_server01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_exception_server01/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_exception_server01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_exception_server01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_test01">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_test01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_test01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_test01/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_test01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_test01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_client_tcp">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_client_tcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_client_tcp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_client_tcp/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_client_tcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_client_tcp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_batchwrite_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_batchwrite_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_batchwrite_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_batchwrite_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_batchwrite_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_batchwrite_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_select_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_select_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_select_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_select_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_select_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_select_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_homework_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_homework_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_homework_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_homework_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_homework_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_homework_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my__thread_test">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my__thread_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my__thread_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my__thread_test/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my__thread_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my__thread_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_tcpclient">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_tcpclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_tcpclient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_tcpclient/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_tcpclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_tcpclient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_client_udp">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_client_udp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_client_udp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_client_udp/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_client_udp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_client_udp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_stream_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_stream_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_stream_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_stream_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_stream_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_stream_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_tcp_keep_alive_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_tcp_keep_alive_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_tcp_keep_alive_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_tcp_keep_alive_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_tcp_keep_alive_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_tcp_keep_alive_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_server_udp">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_server_udp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_server_udp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_server_udp/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_server_udp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_server_udp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_server_tcp">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_server_tcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_server_tcp"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_server_tcp/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_server_tcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_server_tcp/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_function_test">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_function_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_function_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_function_test/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_function_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_function_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_nonblocking_IO_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_nonblocking_IO_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_nonblocking_IO_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_nonblocking_IO_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_nonblocking_IO_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_nonblocking_IO_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_reactor_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_reactor_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_reactor_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_reactor_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_reactor_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_reactor_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_common_test">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_common_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_common_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_common_test/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_common_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_common_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_server_address_in_use">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_server_address_in_use" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_server_address_in_use"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_server_address_in_use/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_server_address_in_use" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_server_address_in_use/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_client0">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_client0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_client0"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_udp_connect_client0/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_udp_connect_client0" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_udp_connect_client0/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_exception_client01">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_exception_client01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_exception_client01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_exception_client01/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_exception_client01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_exception_client01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_tcpserver">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_tcpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_tcpserver"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_tcpserver/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_tcpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_tcpserver/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_epoll_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_epoll_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_epoll_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_epoll_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_epoll_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_epoll_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_multi_process_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_multi_process_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_multi_process_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_multi_process_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_multi_process_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_multi_process_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_stream_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_stream_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_stream_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_tcp_stream_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_tcp_stream_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_tcp_stream_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_homework_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_homework_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_homework_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_homework_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_homework_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_homework_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_select_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_select_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_select_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_select_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_select_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_select_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_poll_server">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_poll_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_poll_server"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_poll_server/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_poll_server" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_poll_server/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_poll_client">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_poll_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_poll_client"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_poll_client/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_poll_client" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_poll_client/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_udpclient">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_udpclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_udpclient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_local_udpclient/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_local_udpclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_local_udpclient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_mutil_thread_server01">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_mutil_thread_server01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_mutil_thread_server01"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_socket_mutil_thread_server01/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/my_socket_mutil_thread_server01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_socket_mutil_thread_server01/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/acceptor.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/acceptor.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/buffer.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/buffer.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/channel.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/channel.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/channel_map.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/channel_map.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/event_loop.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/event_loop.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/event_loop_thread.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/event_loop_thread.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_request.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_request.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_response.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_response.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_server.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/http_server.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/log.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/log.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/poll_dispatcher.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/read.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/sock_ntop.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/tcp_client.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/tcp_connection.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/tcp_connection.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/tcp_server.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/tcp_server.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/thread_pool.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/thread_pool.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/utils.c">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/lib/utils.h">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my__thread_test.cpp">
+			<Option target="my__thread_test"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_common_test.cpp">
+			<Option target="my_common_test"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_function_test.cpp">
+			<Option target="my_function_test"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_batchwrite_client.cpp">
+			<Option target="my_socket_batchwrite_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_client_tcp.cpp">
+			<Option target="my_socket_client_tcp"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_client_udp.cpp">
+			<Option target="my_socket_client_udp"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_close_shutdown_client.cpp">
+			<Option target="my_socket_close_shutdown_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_close_shutdown_server.cpp">
+			<Option target="my_socket_close_shutdown_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_epoll_server.cpp">
+			<Option target="my_socket_epoll_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_homework_client.cpp">
+			<Option target="my_socket_homework_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_homework_server.cpp">
+			<Option target="my_socket_homework_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_local_tcpclient.cpp">
+			<Option target="my_socket_local_tcpclient"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_local_tcpserver.cpp">
+			<Option target="my_socket_local_tcpserver"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_local_udpclient.cpp">
+			<Option target="my_socket_local_udpclient"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_local_udpserver.cpp">
+			<Option target="my_socket_local_udpserver"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_multi_process_server.cpp">
+			<Option target="my_socket_multi_process_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_multi_thread_server02.cpp">
+			<Option target="my_socket_multi_thread_server02"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_mutil_thread_server01.cpp">
+			<Option target="my_socket_mutil_thread_server01"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_nonblocking_IO_server.cpp">
+			<Option target="my_socket_nonblocking_IO_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_poll_client.cpp">
+			<Option target="my_socket_poll_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_poll_server.cpp">
+			<Option target="my_socket_poll_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_reactor_server.cpp">
+			<Option target="my_socket_reactor_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_select_client.cpp">
+			<Option target="my_socket_select_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_select_server.cpp">
+			<Option target="my_socket_select_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_server_tcp.cpp">
+			<Option target="my_socket_server_tcp"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_server_udp.cpp">
+			<Option target="my_socket_server_udp"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_tcp_exception_client01.cpp">
+			<Option target="my_socket_tcp_exception_client01"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_tcp_exception_server01.cpp">
+			<Option target="my_socket_tcp_exception_server01"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_tcp_server_address_in_use.cpp">
+			<Option target="my_socket_tcp_server_address_in_use"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_tcp_stream_client.cpp">
+			<Option target="my_socket_tcp_stream_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_tcp_stream_server.cpp">
+			<Option target="my_socket_tcp_stream_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_test01.cpp">
+			<Option target="my_socket_test01"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_udp_connect_client0.cpp">
+			<Option target="my_socket_udp_connect_client"/>
+			<Option target="my_socket_udp_connect_client0"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_udp_connect_server.cpp">
+			<Option target="my_socket_udp_connect_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_tcp_keep_alive_client.cpp">
+			<Option target="my_tcp_keep_alive_client"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_tcp_keep_alive_server.cpp">
+			<Option target="my_tcp_keep_alive_server"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

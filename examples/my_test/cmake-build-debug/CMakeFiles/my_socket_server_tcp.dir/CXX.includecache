@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_socket_server_tcp.cpp
+iostream
+-
+sys/socket.h
+-
+netinet/in.h
+-
+string.h
+-
+arpa/inet.h
+-
+errno.h
+-
+error.h
+-
+unistd.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_tcp_exception_client.dir/my_socket_tcp_exception_client01.o  -o my_socket_tcp_exception_client 

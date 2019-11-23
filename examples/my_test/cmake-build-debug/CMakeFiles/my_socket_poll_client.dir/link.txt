@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_poll_client.dir/my_socket_poll_client.o  -o my_socket_poll_client 

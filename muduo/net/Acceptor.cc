@@ -48,7 +48,14 @@ void Acceptor::listen()
 {
   loop_->assertInLoopThread();
   listenning_ = true;
+
+    // 此函数最终调用listen() API函数，启动监听
   acceptSocket_.listen();
+
+    // 此函数将监听socket对应的Channel对象放入轮询管理器poller的监控描述符集合中
+    // 当监听socket收到客户端接入请求后，监听socket对应的Channel对象（acceptChannel_）
+    // 的handleEvent()函数，最终会调用到Acceptor::handleRead() （此函数将在稍后介绍）
+    // 原文链接：https://blog.csdn.net/adkada1/article/details/54342275
   acceptChannel_.enableReading();
 }
 
@@ -56,6 +63,9 @@ void Acceptor::handleRead()
 {
   loop_->assertInLoopThread();
   InetAddress peerAddr;
+
+//    代码int connfd = acceptSocket_.accept(&peerAddr)
+//    最终会调用到系统API函数accept()，用于接收一个客户端的连接请求
   //FIXME loop until no more
   int connfd = acceptSocket_.accept(&peerAddr);
   if (connfd >= 0)
@@ -74,6 +84,7 @@ void Acceptor::handleRead()
   else
   {
     LOG_SYSERR << "in Acceptor::handleRead";
+
     // Read the section named "The special problem of
     // accept()ing when you can't" in libev's doc.
     // By Marc Lehmann, author of libev.

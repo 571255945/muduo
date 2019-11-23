@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_local_tcpserver.dir/my_socket_local_tcpserver.o  -o my_socket_local_tcpserver 

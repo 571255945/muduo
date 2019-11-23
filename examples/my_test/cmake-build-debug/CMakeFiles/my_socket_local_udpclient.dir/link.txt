@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/my_socket_local_udpclient.dir/my_socket_local_udpclient.o  -o my_socket_local_udpclient 

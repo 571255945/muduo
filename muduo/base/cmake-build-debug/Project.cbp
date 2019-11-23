@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_base">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/libmuduo_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 muduo_base"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="muduo_base/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/libmuduo_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 muduo_base/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/AsyncLogging.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/AsyncLogging.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Condition.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Condition.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/CountDownLatch.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/CountDownLatch.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/CurrentThread.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/CurrentThread.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Date.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Date.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Exception.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Exception.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/FileUtil.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/FileUtil.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/LogFile.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/LogFile.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/LogStream.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/LogStream.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Logging.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Logging.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/ProcessInfo.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/ProcessInfo.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Thread.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Thread.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/ThreadPool.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/ThreadPool.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/TimeZone.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/TimeZone.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Timestamp.cc">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/Timestamp.h">
+			<Option target="muduo_base"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/muduo/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

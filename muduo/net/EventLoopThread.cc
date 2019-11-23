@@ -35,7 +35,19 @@ EventLoopThread::~EventLoopThread()
     thread_.join();
   }
 }
-
+//此函数会返回新线程中的EventLoop对象的地址
+//由于EventLoop是在新线程中建立的，而在构造函数中，新线程是threadFunc
+//EventLoopThread::EventLoopThread()
+//	:loop_(NULL),
+//	 exiting_(false),
+//	 started_(false),
+// 	 thread_(std::bind(&EventLoopThread::threadFunc,this)),
+//	 mutex_(),
+//	 cond_()
+//{
+//}
+// 因此，在startLoop中需要用条件变量等待EventLoop的建立，直到新线程中
+// EventLoop变量的建立并赋值给loop_成员变量：
 EventLoop* EventLoopThread::startLoop()
 {
   assert(!thread_.started());
@@ -53,7 +65,7 @@ EventLoop* EventLoopThread::startLoop()
 
   return loop;
 }
-
+//新线程中建立了 EventLoop loop
 void EventLoopThread::threadFunc()
 {
   EventLoop loop;
