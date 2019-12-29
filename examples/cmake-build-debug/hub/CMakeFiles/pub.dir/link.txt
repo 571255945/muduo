@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/pub.dir/pub.o  -o pub  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/hub libmuduo_pubsub.a -lmuduo_net 

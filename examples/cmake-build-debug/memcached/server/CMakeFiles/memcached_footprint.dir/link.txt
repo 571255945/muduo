@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/memcached_footprint.dir/Item.o CMakeFiles/memcached_footprint.dir/MemcacheServer.o CMakeFiles/memcached_footprint.dir/Session.o CMakeFiles/memcached_footprint.dir/footprint_test.o  -o memcached_footprint -lmuduo_net -lmuduo_inspect 

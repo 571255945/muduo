@@ -6,5 +6,5 @@ CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yuanye/WorkSpace/Git -I/home/yuanye/WorkSpace/Git/My_Github/muduo 
+CXX_INCLUDES = -I/home/yuanye/WorkSpace/Git/My_Github/muduo -I/home/yuanye/WorkSpace/Git 
 

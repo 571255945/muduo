@@ -22,6 +22,9 @@ add_subdirectory(twisted/finger)
 add_subdirectory(wordcount)
 add_subdirectory(zeromq)
 add_subdirectory(my_test)
+add_subdirectory(muduo_test)
+
+#include_directories(/home/yuanye/WorkSpace/Git/My_Github/muduo)
 
 if(CARES_INCLUDE_DIR AND CARES_LIBRARY)
   add_subdirectory(cdns)

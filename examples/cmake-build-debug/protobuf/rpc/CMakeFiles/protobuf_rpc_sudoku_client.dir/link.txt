@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/protobuf_rpc_sudoku_client.dir/client.o  -o protobuf_rpc_sudoku_client  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/protobuf/rpc libsudoku_proto.a -lmuduo_protorpc -lprotobuf -lpthread 

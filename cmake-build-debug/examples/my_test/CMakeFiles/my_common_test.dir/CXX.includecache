@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_common_test.cpp
+boost/program_options.hpp
+-
+boost/noncopyable.hpp
+-
+iostream
+-
+iostream
+-
+vector
+-
+iostream
+-
+iostream
+-
+stdio.h
+-
+string.h
+-
+iostream
+-
+stdio.h
+-
+string.h
+-
+iostream
+-
+

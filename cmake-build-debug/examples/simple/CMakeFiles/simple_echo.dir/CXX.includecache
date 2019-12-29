@@ -170,12 +170,6 @@ map
 muduo/base/copyable.h
 ../muduo/net/muduo/base/copyable.h
 
-/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/echo.cc
-examples/simple/echo/echo.h
-/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/examples/simple/echo/echo.h
-muduo/base/Logging.h
-/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/muduo/base/Logging.h
-
 /home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/main.cc
 examples/simple/echo/echo.h
 /home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/examples/simple/echo/echo.h

@@ -68,28 +68,6 @@ install/strip/fast: preinstall/fast
 	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -102,16 +80,17 @@ install/local/fast: preinstall/fast
 	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,6 +103,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -134,6 +124,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,186 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/rule
+
+# Convenience name for target.
+my_socket_multi_thread_server02: examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/rule
+
+.PHONY : my_socket_multi_thread_server02
+
+# fast build rule for target.
+my_socket_multi_thread_server02/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build
+.PHONY : my_socket_multi_thread_server02/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/rule
+
+# Convenience name for target.
+my_socket_close_shutdown_client: examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/rule
+
+.PHONY : my_socket_close_shutdown_client
+
+# fast build rule for target.
+my_socket_close_shutdown_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build
+.PHONY : my_socket_close_shutdown_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/rule
+
+# Convenience name for target.
+my_tcp_keep_alive_client: examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/rule
+
+.PHONY : my_tcp_keep_alive_client
+
+# fast build rule for target.
+my_tcp_keep_alive_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build
+.PHONY : my_tcp_keep_alive_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/rule
+
+# Convenience name for target.
+my_socket_udp_connect_client: examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/rule
+
+.PHONY : my_socket_udp_connect_client
+
+# fast build rule for target.
+my_socket_udp_connect_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build
+.PHONY : my_socket_udp_connect_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/rule
+
+# Convenience name for target.
+my_socket_close_shutdown_server: examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/rule
+
+.PHONY : my_socket_close_shutdown_server
+
+# fast build rule for target.
+my_socket_close_shutdown_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build
+.PHONY : my_socket_close_shutdown_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule
+
+# Convenience name for target.
+my_socket_local_udpserver: examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule
+
+.PHONY : my_socket_local_udpserver
+
+# fast build rule for target.
+my_socket_local_udpserver/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build
+.PHONY : my_socket_local_udpserver/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/rule
+
+# Convenience name for target.
+my_socket_tcp_exception_server01: examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/rule
+
+.PHONY : my_socket_tcp_exception_server01
+
+# fast build rule for target.
+my_socket_tcp_exception_server01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build
+.PHONY : my_socket_tcp_exception_server01/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_test01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+
+# Convenience name for target.
+my_socket_test01: examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+
+.PHONY : my_socket_test01
+
+# fast build rule for target.
+my_socket_test01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
+.PHONY : my_socket_test01/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_client_tcp.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_client_tcp.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_client_tcp.dir/rule
+
+# Convenience name for target.
+my_socket_client_tcp: examples/my_test/CMakeFiles/my_socket_client_tcp.dir/rule
+
+.PHONY : my_socket_client_tcp
+
+# fast build rule for target.
+my_socket_client_tcp/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build
+.PHONY : my_socket_client_tcp/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/rule
+
+# Convenience name for target.
+my_socket_batchwrite_client: examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/rule
+
+.PHONY : my_socket_batchwrite_client
+
+# fast build rule for target.
+my_socket_batchwrite_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build.make examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build
+.PHONY : my_socket_batchwrite_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_select_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_select_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_select_client.dir/rule
+
+# Convenience name for target.
+my_socket_select_client: examples/my_test/CMakeFiles/my_socket_select_client.dir/rule
+
+.PHONY : my_socket_select_client
+
+# fast build rule for target.
+my_socket_select_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_client.dir/build.make examples/my_test/CMakeFiles/my_socket_select_client.dir/build
+.PHONY : my_socket_select_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_homework_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_homework_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_homework_server.dir/rule
+
+# Convenience name for target.
+my_socket_homework_server: examples/my_test/CMakeFiles/my_socket_homework_server.dir/rule
+
+.PHONY : my_socket_homework_server
+
+# fast build rule for target.
+my_socket_homework_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_server.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_server.dir/build
+.PHONY : my_socket_homework_server/fast
+
+# Convenience name for target.
 examples/my_test/CMakeFiles/my__thread_test.dir/rule:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my__thread_test.dir/rule
 .PHONY : examples/my_test/CMakeFiles/my__thread_test.dir/rule
@@ -183,19 +363,109 @@ my__thread_test/fast:
 .PHONY : my__thread_test/fast
 
 # Convenience name for target.
-examples/my_test/CMakeFiles/socket_test01.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/socket_test01.dir/rule
-.PHONY : examples/my_test/CMakeFiles/socket_test01.dir/rule
+examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/rule
 
 # Convenience name for target.
-socket_test01: examples/my_test/CMakeFiles/socket_test01.dir/rule
+my_socket_local_tcpclient: examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/rule
 
-.PHONY : socket_test01
+.PHONY : my_socket_local_tcpclient
 
 # fast build rule for target.
-socket_test01/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/socket_test01.dir/build.make examples/my_test/CMakeFiles/socket_test01.dir/build
-.PHONY : socket_test01/fast
+my_socket_local_tcpclient/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build
+.PHONY : my_socket_local_tcpclient/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_client_udp.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_client_udp.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_client_udp.dir/rule
+
+# Convenience name for target.
+my_socket_client_udp: examples/my_test/CMakeFiles/my_socket_client_udp.dir/rule
+
+.PHONY : my_socket_client_udp
+
+# fast build rule for target.
+my_socket_client_udp/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_udp.dir/build
+.PHONY : my_socket_client_udp/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/rule
+
+# Convenience name for target.
+my_socket_tcp_stream_server: examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/rule
+
+.PHONY : my_socket_tcp_stream_server
+
+# fast build rule for target.
+my_socket_tcp_stream_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build
+.PHONY : my_socket_tcp_stream_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/rule
+
+# Convenience name for target.
+my_tcp_keep_alive_server: examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/rule
+
+.PHONY : my_tcp_keep_alive_server
+
+# fast build rule for target.
+my_tcp_keep_alive_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build
+.PHONY : my_tcp_keep_alive_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_server_udp.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_server_udp.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_server_udp.dir/rule
+
+# Convenience name for target.
+my_socket_server_udp: examples/my_test/CMakeFiles/my_socket_server_udp.dir/rule
+
+.PHONY : my_socket_server_udp
+
+# fast build rule for target.
+my_socket_server_udp/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_udp.dir/build
+.PHONY : my_socket_server_udp/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_server_tcp.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_server_tcp.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_server_tcp.dir/rule
+
+# Convenience name for target.
+my_socket_server_tcp: examples/my_test/CMakeFiles/my_socket_server_tcp.dir/rule
+
+.PHONY : my_socket_server_tcp
+
+# fast build rule for target.
+my_socket_server_tcp/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build
+.PHONY : my_socket_server_tcp/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/rule
+
+# Convenience name for target.
+my_socket_udp_connect_server: examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/rule
+
+.PHONY : my_socket_udp_connect_server
+
+# fast build rule for target.
+my_socket_udp_connect_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build
+.PHONY : my_socket_udp_connect_server/fast
 
 # Convenience name for target.
 examples/my_test/CMakeFiles/my_function_test.dir/rule:
@@ -211,6 +481,732 @@ my_function_test: examples/my_test/CMakeFiles/my_function_test.dir/rule
 my_function_test/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_function_test.dir/build.make examples/my_test/CMakeFiles/my_function_test.dir/build
 .PHONY : my_function_test/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/rule
+
+# Convenience name for target.
+my_socket_nonblocking_IO_server: examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/rule
+
+.PHONY : my_socket_nonblocking_IO_server
+
+# fast build rule for target.
+my_socket_nonblocking_IO_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build.make examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build
+.PHONY : my_socket_nonblocking_IO_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_reactor_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_reactor_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_reactor_server.dir/rule
+
+# Convenience name for target.
+my_socket_reactor_server: examples/my_test/CMakeFiles/my_socket_reactor_server.dir/rule
+
+.PHONY : my_socket_reactor_server
+
+# fast build rule for target.
+my_socket_reactor_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build
+.PHONY : my_socket_reactor_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_common_test.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_common_test.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_common_test.dir/rule
+
+# Convenience name for target.
+my_common_test: examples/my_test/CMakeFiles/my_common_test.dir/rule
+
+.PHONY : my_common_test
+
+# fast build rule for target.
+my_common_test/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/build
+.PHONY : my_common_test/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/rule
+
+# Convenience name for target.
+my_socket_tcp_server_address_in_use: examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/rule
+
+.PHONY : my_socket_tcp_server_address_in_use
+
+# fast build rule for target.
+my_socket_tcp_server_address_in_use/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build
+.PHONY : my_socket_tcp_server_address_in_use/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule
+
+# Convenience name for target.
+my_socket_udp_connect_client0: examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule
+
+.PHONY : my_socket_udp_connect_client0
+
+# fast build rule for target.
+my_socket_udp_connect_client0/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build
+.PHONY : my_socket_udp_connect_client0/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/rule
+
+# Convenience name for target.
+my_socket_tcp_exception_client01: examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/rule
+
+.PHONY : my_socket_tcp_exception_client01
+
+# fast build rule for target.
+my_socket_tcp_exception_client01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build
+.PHONY : my_socket_tcp_exception_client01/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/rule
+
+# Convenience name for target.
+my_socket_local_tcpserver: examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/rule
+
+.PHONY : my_socket_local_tcpserver
+
+# fast build rule for target.
+my_socket_local_tcpserver/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build
+.PHONY : my_socket_local_tcpserver/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_epoll_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_epoll_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_epoll_server.dir/rule
+
+# Convenience name for target.
+my_socket_epoll_server: examples/my_test/CMakeFiles/my_socket_epoll_server.dir/rule
+
+.PHONY : my_socket_epoll_server
+
+# fast build rule for target.
+my_socket_epoll_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build
+.PHONY : my_socket_epoll_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/rule
+
+# Convenience name for target.
+my_socket_multi_process_server: examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/rule
+
+.PHONY : my_socket_multi_process_server
+
+# fast build rule for target.
+my_socket_multi_process_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build
+.PHONY : my_socket_multi_process_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/rule
+
+# Convenience name for target.
+my_socket_tcp_stream_client: examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/rule
+
+.PHONY : my_socket_tcp_stream_client
+
+# fast build rule for target.
+my_socket_tcp_stream_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build
+.PHONY : my_socket_tcp_stream_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule
+
+# Convenience name for target.
+my_socket_homework_client: examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule
+
+.PHONY : my_socket_homework_client
+
+# fast build rule for target.
+my_socket_homework_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_client.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_client.dir/build
+.PHONY : my_socket_homework_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_select_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_select_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_select_server.dir/rule
+
+# Convenience name for target.
+my_socket_select_server: examples/my_test/CMakeFiles/my_socket_select_server.dir/rule
+
+.PHONY : my_socket_select_server
+
+# fast build rule for target.
+my_socket_select_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_server.dir/build.make examples/my_test/CMakeFiles/my_socket_select_server.dir/build
+.PHONY : my_socket_select_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_poll_server.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_poll_server.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_poll_server.dir/rule
+
+# Convenience name for target.
+my_socket_poll_server: examples/my_test/CMakeFiles/my_socket_poll_server.dir/rule
+
+.PHONY : my_socket_poll_server
+
+# fast build rule for target.
+my_socket_poll_server/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_server.dir/build
+.PHONY : my_socket_poll_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_poll_client.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_poll_client.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_poll_client.dir/rule
+
+# Convenience name for target.
+my_socket_poll_client: examples/my_test/CMakeFiles/my_socket_poll_client.dir/rule
+
+.PHONY : my_socket_poll_client
+
+# fast build rule for target.
+my_socket_poll_client/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/build
+.PHONY : my_socket_poll_client/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+
+# Convenience name for target.
+my_socket_local_udpclient: examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+
+.PHONY : my_socket_local_udpclient
+
+# fast build rule for target.
+my_socket_local_udpclient/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
+.PHONY : my_socket_local_udpclient/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+
+# Convenience name for target.
+my_socket_mutil_thread_server01: examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+
+.PHONY : my_socket_mutil_thread_server01
+
+# fast build rule for target.
+my_socket_mutil_thread_server01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
+.PHONY : my_socket_mutil_thread_server01/fast
+
+lib/acceptor.o: lib/acceptor.c.o
+
+.PHONY : lib/acceptor.o
+
+# target to build an object file
+lib/acceptor.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/acceptor.c.o
+.PHONY : lib/acceptor.c.o
+
+lib/acceptor.i: lib/acceptor.c.i
+
+.PHONY : lib/acceptor.i
+
+# target to preprocess a source file
+lib/acceptor.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/acceptor.c.i
+.PHONY : lib/acceptor.c.i
+
+lib/acceptor.s: lib/acceptor.c.s
+
+.PHONY : lib/acceptor.s
+
+# target to generate assembly for a file
+lib/acceptor.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/acceptor.c.s
+.PHONY : lib/acceptor.c.s
+
+lib/buffer.o: lib/buffer.c.o
+
+.PHONY : lib/buffer.o
+
+# target to build an object file
+lib/buffer.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/buffer.c.o
+.PHONY : lib/buffer.c.o
+
+lib/buffer.i: lib/buffer.c.i
+
+.PHONY : lib/buffer.i
+
+# target to preprocess a source file
+lib/buffer.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/buffer.c.i
+.PHONY : lib/buffer.c.i
+
+lib/buffer.s: lib/buffer.c.s
+
+.PHONY : lib/buffer.s
+
+# target to generate assembly for a file
+lib/buffer.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/buffer.c.s
+.PHONY : lib/buffer.c.s
+
+lib/channel.o: lib/channel.c.o
+
+.PHONY : lib/channel.o
+
+# target to build an object file
+lib/channel.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel.c.o
+.PHONY : lib/channel.c.o
+
+lib/channel.i: lib/channel.c.i
+
+.PHONY : lib/channel.i
+
+# target to preprocess a source file
+lib/channel.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel.c.i
+.PHONY : lib/channel.c.i
+
+lib/channel.s: lib/channel.c.s
+
+.PHONY : lib/channel.s
+
+# target to generate assembly for a file
+lib/channel.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel.c.s
+.PHONY : lib/channel.c.s
+
+lib/channel_map.o: lib/channel_map.c.o
+
+.PHONY : lib/channel_map.o
+
+# target to build an object file
+lib/channel_map.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel_map.c.o
+.PHONY : lib/channel_map.c.o
+
+lib/channel_map.i: lib/channel_map.c.i
+
+.PHONY : lib/channel_map.i
+
+# target to preprocess a source file
+lib/channel_map.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel_map.c.i
+.PHONY : lib/channel_map.c.i
+
+lib/channel_map.s: lib/channel_map.c.s
+
+.PHONY : lib/channel_map.s
+
+# target to generate assembly for a file
+lib/channel_map.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/channel_map.c.s
+.PHONY : lib/channel_map.c.s
+
+lib/event_loop.o: lib/event_loop.c.o
+
+.PHONY : lib/event_loop.o
+
+# target to build an object file
+lib/event_loop.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop.c.o
+.PHONY : lib/event_loop.c.o
+
+lib/event_loop.i: lib/event_loop.c.i
+
+.PHONY : lib/event_loop.i
+
+# target to preprocess a source file
+lib/event_loop.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop.c.i
+.PHONY : lib/event_loop.c.i
+
+lib/event_loop.s: lib/event_loop.c.s
+
+.PHONY : lib/event_loop.s
+
+# target to generate assembly for a file
+lib/event_loop.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop.c.s
+.PHONY : lib/event_loop.c.s
+
+lib/event_loop_thread.o: lib/event_loop_thread.c.o
+
+.PHONY : lib/event_loop_thread.o
+
+# target to build an object file
+lib/event_loop_thread.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop_thread.c.o
+.PHONY : lib/event_loop_thread.c.o
+
+lib/event_loop_thread.i: lib/event_loop_thread.c.i
+
+.PHONY : lib/event_loop_thread.i
+
+# target to preprocess a source file
+lib/event_loop_thread.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop_thread.c.i
+.PHONY : lib/event_loop_thread.c.i
+
+lib/event_loop_thread.s: lib/event_loop_thread.c.s
+
+.PHONY : lib/event_loop_thread.s
+
+# target to generate assembly for a file
+lib/event_loop_thread.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/event_loop_thread.c.s
+.PHONY : lib/event_loop_thread.c.s
+
+lib/http_request.o: lib/http_request.c.o
+
+.PHONY : lib/http_request.o
+
+# target to build an object file
+lib/http_request.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_request.c.o
+.PHONY : lib/http_request.c.o
+
+lib/http_request.i: lib/http_request.c.i
+
+.PHONY : lib/http_request.i
+
+# target to preprocess a source file
+lib/http_request.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_request.c.i
+.PHONY : lib/http_request.c.i
+
+lib/http_request.s: lib/http_request.c.s
+
+.PHONY : lib/http_request.s
+
+# target to generate assembly for a file
+lib/http_request.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_request.c.s
+.PHONY : lib/http_request.c.s
+
+lib/http_response.o: lib/http_response.c.o
+
+.PHONY : lib/http_response.o
+
+# target to build an object file
+lib/http_response.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_response.c.o
+.PHONY : lib/http_response.c.o
+
+lib/http_response.i: lib/http_response.c.i
+
+.PHONY : lib/http_response.i
+
+# target to preprocess a source file
+lib/http_response.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_response.c.i
+.PHONY : lib/http_response.c.i
+
+lib/http_response.s: lib/http_response.c.s
+
+.PHONY : lib/http_response.s
+
+# target to generate assembly for a file
+lib/http_response.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_response.c.s
+.PHONY : lib/http_response.c.s
+
+lib/http_server.o: lib/http_server.c.o
+
+.PHONY : lib/http_server.o
+
+# target to build an object file
+lib/http_server.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_server.c.o
+.PHONY : lib/http_server.c.o
+
+lib/http_server.i: lib/http_server.c.i
+
+.PHONY : lib/http_server.i
+
+# target to preprocess a source file
+lib/http_server.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_server.c.i
+.PHONY : lib/http_server.c.i
+
+lib/http_server.s: lib/http_server.c.s
+
+.PHONY : lib/http_server.s
+
+# target to generate assembly for a file
+lib/http_server.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/http_server.c.s
+.PHONY : lib/http_server.c.s
+
+lib/log.o: lib/log.c.o
+
+.PHONY : lib/log.o
+
+# target to build an object file
+lib/log.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/log.c.o
+.PHONY : lib/log.c.o
+
+lib/log.i: lib/log.c.i
+
+.PHONY : lib/log.i
+
+# target to preprocess a source file
+lib/log.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/log.c.i
+.PHONY : lib/log.c.i
+
+lib/log.s: lib/log.c.s
+
+.PHONY : lib/log.s
+
+# target to generate assembly for a file
+lib/log.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/log.c.s
+.PHONY : lib/log.c.s
+
+lib/poll_dispatcher.o: lib/poll_dispatcher.c.o
+
+.PHONY : lib/poll_dispatcher.o
+
+# target to build an object file
+lib/poll_dispatcher.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/poll_dispatcher.c.o
+.PHONY : lib/poll_dispatcher.c.o
+
+lib/poll_dispatcher.i: lib/poll_dispatcher.c.i
+
+.PHONY : lib/poll_dispatcher.i
+
+# target to preprocess a source file
+lib/poll_dispatcher.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/poll_dispatcher.c.i
+.PHONY : lib/poll_dispatcher.c.i
+
+lib/poll_dispatcher.s: lib/poll_dispatcher.c.s
+
+.PHONY : lib/poll_dispatcher.s
+
+# target to generate assembly for a file
+lib/poll_dispatcher.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/poll_dispatcher.c.s
+.PHONY : lib/poll_dispatcher.c.s
+
+lib/read.o: lib/read.c.o
+
+.PHONY : lib/read.o
+
+# target to build an object file
+lib/read.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/read.c.o
+.PHONY : lib/read.c.o
+
+lib/read.i: lib/read.c.i
+
+.PHONY : lib/read.i
+
+# target to preprocess a source file
+lib/read.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/read.c.i
+.PHONY : lib/read.c.i
+
+lib/read.s: lib/read.c.s
+
+.PHONY : lib/read.s
+
+# target to generate assembly for a file
+lib/read.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/read.c.s
+.PHONY : lib/read.c.s
+
+lib/sock_ntop.o: lib/sock_ntop.c.o
+
+.PHONY : lib/sock_ntop.o
+
+# target to build an object file
+lib/sock_ntop.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/sock_ntop.c.o
+.PHONY : lib/sock_ntop.c.o
+
+lib/sock_ntop.i: lib/sock_ntop.c.i
+
+.PHONY : lib/sock_ntop.i
+
+# target to preprocess a source file
+lib/sock_ntop.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/sock_ntop.c.i
+.PHONY : lib/sock_ntop.c.i
+
+lib/sock_ntop.s: lib/sock_ntop.c.s
+
+.PHONY : lib/sock_ntop.s
+
+# target to generate assembly for a file
+lib/sock_ntop.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/sock_ntop.c.s
+.PHONY : lib/sock_ntop.c.s
+
+lib/tcp_client.o: lib/tcp_client.c.o
+
+.PHONY : lib/tcp_client.o
+
+# target to build an object file
+lib/tcp_client.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_client.c.o
+.PHONY : lib/tcp_client.c.o
+
+lib/tcp_client.i: lib/tcp_client.c.i
+
+.PHONY : lib/tcp_client.i
+
+# target to preprocess a source file
+lib/tcp_client.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_client.c.i
+.PHONY : lib/tcp_client.c.i
+
+lib/tcp_client.s: lib/tcp_client.c.s
+
+.PHONY : lib/tcp_client.s
+
+# target to generate assembly for a file
+lib/tcp_client.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_client.c.s
+.PHONY : lib/tcp_client.c.s
+
+lib/tcp_connection.o: lib/tcp_connection.c.o
+
+.PHONY : lib/tcp_connection.o
+
+# target to build an object file
+lib/tcp_connection.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_connection.c.o
+.PHONY : lib/tcp_connection.c.o
+
+lib/tcp_connection.i: lib/tcp_connection.c.i
+
+.PHONY : lib/tcp_connection.i
+
+# target to preprocess a source file
+lib/tcp_connection.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_connection.c.i
+.PHONY : lib/tcp_connection.c.i
+
+lib/tcp_connection.s: lib/tcp_connection.c.s
+
+.PHONY : lib/tcp_connection.s
+
+# target to generate assembly for a file
+lib/tcp_connection.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_connection.c.s
+.PHONY : lib/tcp_connection.c.s
+
+lib/tcp_server.o: lib/tcp_server.c.o
+
+.PHONY : lib/tcp_server.o
+
+# target to build an object file
+lib/tcp_server.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_server.c.o
+.PHONY : lib/tcp_server.c.o
+
+lib/tcp_server.i: lib/tcp_server.c.i
+
+.PHONY : lib/tcp_server.i
+
+# target to preprocess a source file
+lib/tcp_server.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_server.c.i
+.PHONY : lib/tcp_server.c.i
+
+lib/tcp_server.s: lib/tcp_server.c.s
+
+.PHONY : lib/tcp_server.s
+
+# target to generate assembly for a file
+lib/tcp_server.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/tcp_server.c.s
+.PHONY : lib/tcp_server.c.s
+
+lib/thread_pool.o: lib/thread_pool.c.o
+
+.PHONY : lib/thread_pool.o
+
+# target to build an object file
+lib/thread_pool.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/thread_pool.c.o
+.PHONY : lib/thread_pool.c.o
+
+lib/thread_pool.i: lib/thread_pool.c.i
+
+.PHONY : lib/thread_pool.i
+
+# target to preprocess a source file
+lib/thread_pool.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/thread_pool.c.i
+.PHONY : lib/thread_pool.c.i
+
+lib/thread_pool.s: lib/thread_pool.c.s
+
+.PHONY : lib/thread_pool.s
+
+# target to generate assembly for a file
+lib/thread_pool.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/thread_pool.c.s
+.PHONY : lib/thread_pool.c.s
+
+lib/utils.o: lib/utils.c.o
+
+.PHONY : lib/utils.o
+
+# target to build an object file
+lib/utils.c.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/utils.c.o
+.PHONY : lib/utils.c.o
+
+lib/utils.i: lib/utils.c.i
+
+.PHONY : lib/utils.i
+
+# target to preprocess a source file
+lib/utils.c.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/utils.c.i
+.PHONY : lib/utils.c.i
+
+lib/utils.s: lib/utils.c.s
+
+.PHONY : lib/utils.s
+
+# target to generate assembly for a file
+lib/utils.c.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/lib/utils.c.s
+.PHONY : lib/utils.c.s
 
 my__thread_test.o: my__thread_test.cpp.o
 
@@ -239,6 +1235,33 @@ my__thread_test.cpp.s:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my__thread_test.dir/build.make examples/my_test/CMakeFiles/my__thread_test.dir/my__thread_test.cpp.s
 .PHONY : my__thread_test.cpp.s
 
+my_common_test.o: my_common_test.cpp.o
+
+.PHONY : my_common_test.o
+
+# target to build an object file
+my_common_test.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/my_common_test.cpp.o
+.PHONY : my_common_test.cpp.o
+
+my_common_test.i: my_common_test.cpp.i
+
+.PHONY : my_common_test.i
+
+# target to preprocess a source file
+my_common_test.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/my_common_test.cpp.i
+.PHONY : my_common_test.cpp.i
+
+my_common_test.s: my_common_test.cpp.s
+
+.PHONY : my_common_test.s
+
+# target to generate assembly for a file
+my_common_test.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/my_common_test.cpp.s
+.PHONY : my_common_test.cpp.s
+
 my_function_test.o: my_function_test.cpp.o
 
 .PHONY : my_function_test.o
@@ -266,13 +1289,769 @@ my_function_test.cpp.s:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_function_test.dir/build.make examples/my_test/CMakeFiles/my_function_test.dir/my_function_test.cpp.s
 .PHONY : my_function_test.cpp.s
 
+my_socket_batchwrite_client.o: my_socket_batchwrite_client.cpp.o
+
+.PHONY : my_socket_batchwrite_client.o
+
+# target to build an object file
+my_socket_batchwrite_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build.make examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/my_socket_batchwrite_client.cpp.o
+.PHONY : my_socket_batchwrite_client.cpp.o
+
+my_socket_batchwrite_client.i: my_socket_batchwrite_client.cpp.i
+
+.PHONY : my_socket_batchwrite_client.i
+
+# target to preprocess a source file
+my_socket_batchwrite_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build.make examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/my_socket_batchwrite_client.cpp.i
+.PHONY : my_socket_batchwrite_client.cpp.i
+
+my_socket_batchwrite_client.s: my_socket_batchwrite_client.cpp.s
+
+.PHONY : my_socket_batchwrite_client.s
+
+# target to generate assembly for a file
+my_socket_batchwrite_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build.make examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/my_socket_batchwrite_client.cpp.s
+.PHONY : my_socket_batchwrite_client.cpp.s
+
+my_socket_client_tcp.o: my_socket_client_tcp.cpp.o
+
+.PHONY : my_socket_client_tcp.o
+
+# target to build an object file
+my_socket_client_tcp.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_tcp.dir/my_socket_client_tcp.cpp.o
+.PHONY : my_socket_client_tcp.cpp.o
+
+my_socket_client_tcp.i: my_socket_client_tcp.cpp.i
+
+.PHONY : my_socket_client_tcp.i
+
+# target to preprocess a source file
+my_socket_client_tcp.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_tcp.dir/my_socket_client_tcp.cpp.i
+.PHONY : my_socket_client_tcp.cpp.i
+
+my_socket_client_tcp.s: my_socket_client_tcp.cpp.s
+
+.PHONY : my_socket_client_tcp.s
+
+# target to generate assembly for a file
+my_socket_client_tcp.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_tcp.dir/my_socket_client_tcp.cpp.s
+.PHONY : my_socket_client_tcp.cpp.s
+
+my_socket_client_udp.o: my_socket_client_udp.cpp.o
+
+.PHONY : my_socket_client_udp.o
+
+# target to build an object file
+my_socket_client_udp.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_udp.dir/my_socket_client_udp.cpp.o
+.PHONY : my_socket_client_udp.cpp.o
+
+my_socket_client_udp.i: my_socket_client_udp.cpp.i
+
+.PHONY : my_socket_client_udp.i
+
+# target to preprocess a source file
+my_socket_client_udp.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_udp.dir/my_socket_client_udp.cpp.i
+.PHONY : my_socket_client_udp.cpp.i
+
+my_socket_client_udp.s: my_socket_client_udp.cpp.s
+
+.PHONY : my_socket_client_udp.s
+
+# target to generate assembly for a file
+my_socket_client_udp.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_udp.dir/my_socket_client_udp.cpp.s
+.PHONY : my_socket_client_udp.cpp.s
+
+my_socket_close_shutdown_client.o: my_socket_close_shutdown_client.cpp.o
+
+.PHONY : my_socket_close_shutdown_client.o
+
+# target to build an object file
+my_socket_close_shutdown_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/my_socket_close_shutdown_client.cpp.o
+.PHONY : my_socket_close_shutdown_client.cpp.o
+
+my_socket_close_shutdown_client.i: my_socket_close_shutdown_client.cpp.i
+
+.PHONY : my_socket_close_shutdown_client.i
+
+# target to preprocess a source file
+my_socket_close_shutdown_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/my_socket_close_shutdown_client.cpp.i
+.PHONY : my_socket_close_shutdown_client.cpp.i
+
+my_socket_close_shutdown_client.s: my_socket_close_shutdown_client.cpp.s
+
+.PHONY : my_socket_close_shutdown_client.s
+
+# target to generate assembly for a file
+my_socket_close_shutdown_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/my_socket_close_shutdown_client.cpp.s
+.PHONY : my_socket_close_shutdown_client.cpp.s
+
+my_socket_close_shutdown_server.o: my_socket_close_shutdown_server.cpp.o
+
+.PHONY : my_socket_close_shutdown_server.o
+
+# target to build an object file
+my_socket_close_shutdown_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/my_socket_close_shutdown_server.cpp.o
+.PHONY : my_socket_close_shutdown_server.cpp.o
+
+my_socket_close_shutdown_server.i: my_socket_close_shutdown_server.cpp.i
+
+.PHONY : my_socket_close_shutdown_server.i
+
+# target to preprocess a source file
+my_socket_close_shutdown_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/my_socket_close_shutdown_server.cpp.i
+.PHONY : my_socket_close_shutdown_server.cpp.i
+
+my_socket_close_shutdown_server.s: my_socket_close_shutdown_server.cpp.s
+
+.PHONY : my_socket_close_shutdown_server.s
+
+# target to generate assembly for a file
+my_socket_close_shutdown_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/my_socket_close_shutdown_server.cpp.s
+.PHONY : my_socket_close_shutdown_server.cpp.s
+
+my_socket_epoll_server.o: my_socket_epoll_server.cpp.o
+
+.PHONY : my_socket_epoll_server.o
+
+# target to build an object file
+my_socket_epoll_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_epoll_server.dir/my_socket_epoll_server.cpp.o
+.PHONY : my_socket_epoll_server.cpp.o
+
+my_socket_epoll_server.i: my_socket_epoll_server.cpp.i
+
+.PHONY : my_socket_epoll_server.i
+
+# target to preprocess a source file
+my_socket_epoll_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_epoll_server.dir/my_socket_epoll_server.cpp.i
+.PHONY : my_socket_epoll_server.cpp.i
+
+my_socket_epoll_server.s: my_socket_epoll_server.cpp.s
+
+.PHONY : my_socket_epoll_server.s
+
+# target to generate assembly for a file
+my_socket_epoll_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_epoll_server.dir/my_socket_epoll_server.cpp.s
+.PHONY : my_socket_epoll_server.cpp.s
+
+my_socket_homework_client.o: my_socket_homework_client.cpp.o
+
+.PHONY : my_socket_homework_client.o
+
+# target to build an object file
+my_socket_homework_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_client.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_client.dir/my_socket_homework_client.cpp.o
+.PHONY : my_socket_homework_client.cpp.o
+
+my_socket_homework_client.i: my_socket_homework_client.cpp.i
+
+.PHONY : my_socket_homework_client.i
+
+# target to preprocess a source file
+my_socket_homework_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_client.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_client.dir/my_socket_homework_client.cpp.i
+.PHONY : my_socket_homework_client.cpp.i
+
+my_socket_homework_client.s: my_socket_homework_client.cpp.s
+
+.PHONY : my_socket_homework_client.s
+
+# target to generate assembly for a file
+my_socket_homework_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_client.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_client.dir/my_socket_homework_client.cpp.s
+.PHONY : my_socket_homework_client.cpp.s
+
+my_socket_homework_server.o: my_socket_homework_server.cpp.o
+
+.PHONY : my_socket_homework_server.o
+
+# target to build an object file
+my_socket_homework_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_server.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_server.dir/my_socket_homework_server.cpp.o
+.PHONY : my_socket_homework_server.cpp.o
+
+my_socket_homework_server.i: my_socket_homework_server.cpp.i
+
+.PHONY : my_socket_homework_server.i
+
+# target to preprocess a source file
+my_socket_homework_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_server.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_server.dir/my_socket_homework_server.cpp.i
+.PHONY : my_socket_homework_server.cpp.i
+
+my_socket_homework_server.s: my_socket_homework_server.cpp.s
+
+.PHONY : my_socket_homework_server.s
+
+# target to generate assembly for a file
+my_socket_homework_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_server.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_server.dir/my_socket_homework_server.cpp.s
+.PHONY : my_socket_homework_server.cpp.s
+
+my_socket_local_tcpclient.o: my_socket_local_tcpclient.cpp.o
+
+.PHONY : my_socket_local_tcpclient.o
+
+# target to build an object file
+my_socket_local_tcpclient.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/my_socket_local_tcpclient.cpp.o
+.PHONY : my_socket_local_tcpclient.cpp.o
+
+my_socket_local_tcpclient.i: my_socket_local_tcpclient.cpp.i
+
+.PHONY : my_socket_local_tcpclient.i
+
+# target to preprocess a source file
+my_socket_local_tcpclient.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/my_socket_local_tcpclient.cpp.i
+.PHONY : my_socket_local_tcpclient.cpp.i
+
+my_socket_local_tcpclient.s: my_socket_local_tcpclient.cpp.s
+
+.PHONY : my_socket_local_tcpclient.s
+
+# target to generate assembly for a file
+my_socket_local_tcpclient.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/my_socket_local_tcpclient.cpp.s
+.PHONY : my_socket_local_tcpclient.cpp.s
+
+my_socket_local_tcpserver.o: my_socket_local_tcpserver.cpp.o
+
+.PHONY : my_socket_local_tcpserver.o
+
+# target to build an object file
+my_socket_local_tcpserver.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/my_socket_local_tcpserver.cpp.o
+.PHONY : my_socket_local_tcpserver.cpp.o
+
+my_socket_local_tcpserver.i: my_socket_local_tcpserver.cpp.i
+
+.PHONY : my_socket_local_tcpserver.i
+
+# target to preprocess a source file
+my_socket_local_tcpserver.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/my_socket_local_tcpserver.cpp.i
+.PHONY : my_socket_local_tcpserver.cpp.i
+
+my_socket_local_tcpserver.s: my_socket_local_tcpserver.cpp.s
+
+.PHONY : my_socket_local_tcpserver.s
+
+# target to generate assembly for a file
+my_socket_local_tcpserver.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/my_socket_local_tcpserver.cpp.s
+.PHONY : my_socket_local_tcpserver.cpp.s
+
+my_socket_local_udpclient.o: my_socket_local_udpclient.cpp.o
+
+.PHONY : my_socket_local_udpclient.o
+
+# target to build an object file
+my_socket_local_udpclient.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/my_socket_local_udpclient.cpp.o
+.PHONY : my_socket_local_udpclient.cpp.o
+
+my_socket_local_udpclient.i: my_socket_local_udpclient.cpp.i
+
+.PHONY : my_socket_local_udpclient.i
+
+# target to preprocess a source file
+my_socket_local_udpclient.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/my_socket_local_udpclient.cpp.i
+.PHONY : my_socket_local_udpclient.cpp.i
+
+my_socket_local_udpclient.s: my_socket_local_udpclient.cpp.s
+
+.PHONY : my_socket_local_udpclient.s
+
+# target to generate assembly for a file
+my_socket_local_udpclient.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/my_socket_local_udpclient.cpp.s
+.PHONY : my_socket_local_udpclient.cpp.s
+
+my_socket_local_udpserver.o: my_socket_local_udpserver.cpp.o
+
+.PHONY : my_socket_local_udpserver.o
+
+# target to build an object file
+my_socket_local_udpserver.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/my_socket_local_udpserver.cpp.o
+.PHONY : my_socket_local_udpserver.cpp.o
+
+my_socket_local_udpserver.i: my_socket_local_udpserver.cpp.i
+
+.PHONY : my_socket_local_udpserver.i
+
+# target to preprocess a source file
+my_socket_local_udpserver.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/my_socket_local_udpserver.cpp.i
+.PHONY : my_socket_local_udpserver.cpp.i
+
+my_socket_local_udpserver.s: my_socket_local_udpserver.cpp.s
+
+.PHONY : my_socket_local_udpserver.s
+
+# target to generate assembly for a file
+my_socket_local_udpserver.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/my_socket_local_udpserver.cpp.s
+.PHONY : my_socket_local_udpserver.cpp.s
+
+my_socket_multi_process_server.o: my_socket_multi_process_server.cpp.o
+
+.PHONY : my_socket_multi_process_server.o
+
+# target to build an object file
+my_socket_multi_process_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/my_socket_multi_process_server.cpp.o
+.PHONY : my_socket_multi_process_server.cpp.o
+
+my_socket_multi_process_server.i: my_socket_multi_process_server.cpp.i
+
+.PHONY : my_socket_multi_process_server.i
+
+# target to preprocess a source file
+my_socket_multi_process_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/my_socket_multi_process_server.cpp.i
+.PHONY : my_socket_multi_process_server.cpp.i
+
+my_socket_multi_process_server.s: my_socket_multi_process_server.cpp.s
+
+.PHONY : my_socket_multi_process_server.s
+
+# target to generate assembly for a file
+my_socket_multi_process_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/my_socket_multi_process_server.cpp.s
+.PHONY : my_socket_multi_process_server.cpp.s
+
+my_socket_multi_thread_server02.o: my_socket_multi_thread_server02.cpp.o
+
+.PHONY : my_socket_multi_thread_server02.o
+
+# target to build an object file
+my_socket_multi_thread_server02.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/my_socket_multi_thread_server02.cpp.o
+.PHONY : my_socket_multi_thread_server02.cpp.o
+
+my_socket_multi_thread_server02.i: my_socket_multi_thread_server02.cpp.i
+
+.PHONY : my_socket_multi_thread_server02.i
+
+# target to preprocess a source file
+my_socket_multi_thread_server02.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/my_socket_multi_thread_server02.cpp.i
+.PHONY : my_socket_multi_thread_server02.cpp.i
+
+my_socket_multi_thread_server02.s: my_socket_multi_thread_server02.cpp.s
+
+.PHONY : my_socket_multi_thread_server02.s
+
+# target to generate assembly for a file
+my_socket_multi_thread_server02.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/my_socket_multi_thread_server02.cpp.s
+.PHONY : my_socket_multi_thread_server02.cpp.s
+
+my_socket_mutil_thread_server01.o: my_socket_mutil_thread_server01.cpp.o
+
+.PHONY : my_socket_mutil_thread_server01.o
+
+# target to build an object file
+my_socket_mutil_thread_server01.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/my_socket_mutil_thread_server01.cpp.o
+.PHONY : my_socket_mutil_thread_server01.cpp.o
+
+my_socket_mutil_thread_server01.i: my_socket_mutil_thread_server01.cpp.i
+
+.PHONY : my_socket_mutil_thread_server01.i
+
+# target to preprocess a source file
+my_socket_mutil_thread_server01.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/my_socket_mutil_thread_server01.cpp.i
+.PHONY : my_socket_mutil_thread_server01.cpp.i
+
+my_socket_mutil_thread_server01.s: my_socket_mutil_thread_server01.cpp.s
+
+.PHONY : my_socket_mutil_thread_server01.s
+
+# target to generate assembly for a file
+my_socket_mutil_thread_server01.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/my_socket_mutil_thread_server01.cpp.s
+.PHONY : my_socket_mutil_thread_server01.cpp.s
+
+my_socket_nonblocking_IO_server.o: my_socket_nonblocking_IO_server.cpp.o
+
+.PHONY : my_socket_nonblocking_IO_server.o
+
+# target to build an object file
+my_socket_nonblocking_IO_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build.make examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/my_socket_nonblocking_IO_server.cpp.o
+.PHONY : my_socket_nonblocking_IO_server.cpp.o
+
+my_socket_nonblocking_IO_server.i: my_socket_nonblocking_IO_server.cpp.i
+
+.PHONY : my_socket_nonblocking_IO_server.i
+
+# target to preprocess a source file
+my_socket_nonblocking_IO_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build.make examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/my_socket_nonblocking_IO_server.cpp.i
+.PHONY : my_socket_nonblocking_IO_server.cpp.i
+
+my_socket_nonblocking_IO_server.s: my_socket_nonblocking_IO_server.cpp.s
+
+.PHONY : my_socket_nonblocking_IO_server.s
+
+# target to generate assembly for a file
+my_socket_nonblocking_IO_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build.make examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/my_socket_nonblocking_IO_server.cpp.s
+.PHONY : my_socket_nonblocking_IO_server.cpp.s
+
+my_socket_poll_client.o: my_socket_poll_client.cpp.o
+
+.PHONY : my_socket_poll_client.o
+
+# target to build an object file
+my_socket_poll_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/my_socket_poll_client.cpp.o
+.PHONY : my_socket_poll_client.cpp.o
+
+my_socket_poll_client.i: my_socket_poll_client.cpp.i
+
+.PHONY : my_socket_poll_client.i
+
+# target to preprocess a source file
+my_socket_poll_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/my_socket_poll_client.cpp.i
+.PHONY : my_socket_poll_client.cpp.i
+
+my_socket_poll_client.s: my_socket_poll_client.cpp.s
+
+.PHONY : my_socket_poll_client.s
+
+# target to generate assembly for a file
+my_socket_poll_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/my_socket_poll_client.cpp.s
+.PHONY : my_socket_poll_client.cpp.s
+
+my_socket_poll_server.o: my_socket_poll_server.cpp.o
+
+.PHONY : my_socket_poll_server.o
+
+# target to build an object file
+my_socket_poll_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_server.dir/my_socket_poll_server.cpp.o
+.PHONY : my_socket_poll_server.cpp.o
+
+my_socket_poll_server.i: my_socket_poll_server.cpp.i
+
+.PHONY : my_socket_poll_server.i
+
+# target to preprocess a source file
+my_socket_poll_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_server.dir/my_socket_poll_server.cpp.i
+.PHONY : my_socket_poll_server.cpp.i
+
+my_socket_poll_server.s: my_socket_poll_server.cpp.s
+
+.PHONY : my_socket_poll_server.s
+
+# target to generate assembly for a file
+my_socket_poll_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_server.dir/my_socket_poll_server.cpp.s
+.PHONY : my_socket_poll_server.cpp.s
+
+my_socket_reactor_server.o: my_socket_reactor_server.cpp.o
+
+.PHONY : my_socket_reactor_server.o
+
+# target to build an object file
+my_socket_reactor_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/my_socket_reactor_server.cpp.o
+.PHONY : my_socket_reactor_server.cpp.o
+
+my_socket_reactor_server.i: my_socket_reactor_server.cpp.i
+
+.PHONY : my_socket_reactor_server.i
+
+# target to preprocess a source file
+my_socket_reactor_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/my_socket_reactor_server.cpp.i
+.PHONY : my_socket_reactor_server.cpp.i
+
+my_socket_reactor_server.s: my_socket_reactor_server.cpp.s
+
+.PHONY : my_socket_reactor_server.s
+
+# target to generate assembly for a file
+my_socket_reactor_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/my_socket_reactor_server.cpp.s
+.PHONY : my_socket_reactor_server.cpp.s
+
+my_socket_select_client.o: my_socket_select_client.cpp.o
+
+.PHONY : my_socket_select_client.o
+
+# target to build an object file
+my_socket_select_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_client.dir/build.make examples/my_test/CMakeFiles/my_socket_select_client.dir/my_socket_select_client.cpp.o
+.PHONY : my_socket_select_client.cpp.o
+
+my_socket_select_client.i: my_socket_select_client.cpp.i
+
+.PHONY : my_socket_select_client.i
+
+# target to preprocess a source file
+my_socket_select_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_client.dir/build.make examples/my_test/CMakeFiles/my_socket_select_client.dir/my_socket_select_client.cpp.i
+.PHONY : my_socket_select_client.cpp.i
+
+my_socket_select_client.s: my_socket_select_client.cpp.s
+
+.PHONY : my_socket_select_client.s
+
+# target to generate assembly for a file
+my_socket_select_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_client.dir/build.make examples/my_test/CMakeFiles/my_socket_select_client.dir/my_socket_select_client.cpp.s
+.PHONY : my_socket_select_client.cpp.s
+
+my_socket_select_server.o: my_socket_select_server.cpp.o
+
+.PHONY : my_socket_select_server.o
+
+# target to build an object file
+my_socket_select_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_server.dir/build.make examples/my_test/CMakeFiles/my_socket_select_server.dir/my_socket_select_server.cpp.o
+.PHONY : my_socket_select_server.cpp.o
+
+my_socket_select_server.i: my_socket_select_server.cpp.i
+
+.PHONY : my_socket_select_server.i
+
+# target to preprocess a source file
+my_socket_select_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_server.dir/build.make examples/my_test/CMakeFiles/my_socket_select_server.dir/my_socket_select_server.cpp.i
+.PHONY : my_socket_select_server.cpp.i
+
+my_socket_select_server.s: my_socket_select_server.cpp.s
+
+.PHONY : my_socket_select_server.s
+
+# target to generate assembly for a file
+my_socket_select_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_server.dir/build.make examples/my_test/CMakeFiles/my_socket_select_server.dir/my_socket_select_server.cpp.s
+.PHONY : my_socket_select_server.cpp.s
+
+my_socket_server_tcp.o: my_socket_server_tcp.cpp.o
+
+.PHONY : my_socket_server_tcp.o
+
+# target to build an object file
+my_socket_server_tcp.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_tcp.dir/my_socket_server_tcp.cpp.o
+.PHONY : my_socket_server_tcp.cpp.o
+
+my_socket_server_tcp.i: my_socket_server_tcp.cpp.i
+
+.PHONY : my_socket_server_tcp.i
+
+# target to preprocess a source file
+my_socket_server_tcp.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_tcp.dir/my_socket_server_tcp.cpp.i
+.PHONY : my_socket_server_tcp.cpp.i
+
+my_socket_server_tcp.s: my_socket_server_tcp.cpp.s
+
+.PHONY : my_socket_server_tcp.s
+
+# target to generate assembly for a file
+my_socket_server_tcp.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_tcp.dir/my_socket_server_tcp.cpp.s
+.PHONY : my_socket_server_tcp.cpp.s
+
+my_socket_server_udp.o: my_socket_server_udp.cpp.o
+
+.PHONY : my_socket_server_udp.o
+
+# target to build an object file
+my_socket_server_udp.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_udp.dir/my_socket_server_udp.cpp.o
+.PHONY : my_socket_server_udp.cpp.o
+
+my_socket_server_udp.i: my_socket_server_udp.cpp.i
+
+.PHONY : my_socket_server_udp.i
+
+# target to preprocess a source file
+my_socket_server_udp.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_udp.dir/my_socket_server_udp.cpp.i
+.PHONY : my_socket_server_udp.cpp.i
+
+my_socket_server_udp.s: my_socket_server_udp.cpp.s
+
+.PHONY : my_socket_server_udp.s
+
+# target to generate assembly for a file
+my_socket_server_udp.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_udp.dir/my_socket_server_udp.cpp.s
+.PHONY : my_socket_server_udp.cpp.s
+
+my_socket_tcp_exception_client01.o: my_socket_tcp_exception_client01.cpp.o
+
+.PHONY : my_socket_tcp_exception_client01.o
+
+# target to build an object file
+my_socket_tcp_exception_client01.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/my_socket_tcp_exception_client01.cpp.o
+.PHONY : my_socket_tcp_exception_client01.cpp.o
+
+my_socket_tcp_exception_client01.i: my_socket_tcp_exception_client01.cpp.i
+
+.PHONY : my_socket_tcp_exception_client01.i
+
+# target to preprocess a source file
+my_socket_tcp_exception_client01.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/my_socket_tcp_exception_client01.cpp.i
+.PHONY : my_socket_tcp_exception_client01.cpp.i
+
+my_socket_tcp_exception_client01.s: my_socket_tcp_exception_client01.cpp.s
+
+.PHONY : my_socket_tcp_exception_client01.s
+
+# target to generate assembly for a file
+my_socket_tcp_exception_client01.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/my_socket_tcp_exception_client01.cpp.s
+.PHONY : my_socket_tcp_exception_client01.cpp.s
+
+my_socket_tcp_exception_server01.o: my_socket_tcp_exception_server01.cpp.o
+
+.PHONY : my_socket_tcp_exception_server01.o
+
+# target to build an object file
+my_socket_tcp_exception_server01.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/my_socket_tcp_exception_server01.cpp.o
+.PHONY : my_socket_tcp_exception_server01.cpp.o
+
+my_socket_tcp_exception_server01.i: my_socket_tcp_exception_server01.cpp.i
+
+.PHONY : my_socket_tcp_exception_server01.i
+
+# target to preprocess a source file
+my_socket_tcp_exception_server01.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/my_socket_tcp_exception_server01.cpp.i
+.PHONY : my_socket_tcp_exception_server01.cpp.i
+
+my_socket_tcp_exception_server01.s: my_socket_tcp_exception_server01.cpp.s
+
+.PHONY : my_socket_tcp_exception_server01.s
+
+# target to generate assembly for a file
+my_socket_tcp_exception_server01.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/my_socket_tcp_exception_server01.cpp.s
+.PHONY : my_socket_tcp_exception_server01.cpp.s
+
+my_socket_tcp_server_address_in_use.o: my_socket_tcp_server_address_in_use.cpp.o
+
+.PHONY : my_socket_tcp_server_address_in_use.o
+
+# target to build an object file
+my_socket_tcp_server_address_in_use.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/my_socket_tcp_server_address_in_use.cpp.o
+.PHONY : my_socket_tcp_server_address_in_use.cpp.o
+
+my_socket_tcp_server_address_in_use.i: my_socket_tcp_server_address_in_use.cpp.i
+
+.PHONY : my_socket_tcp_server_address_in_use.i
+
+# target to preprocess a source file
+my_socket_tcp_server_address_in_use.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/my_socket_tcp_server_address_in_use.cpp.i
+.PHONY : my_socket_tcp_server_address_in_use.cpp.i
+
+my_socket_tcp_server_address_in_use.s: my_socket_tcp_server_address_in_use.cpp.s
+
+.PHONY : my_socket_tcp_server_address_in_use.s
+
+# target to generate assembly for a file
+my_socket_tcp_server_address_in_use.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/my_socket_tcp_server_address_in_use.cpp.s
+.PHONY : my_socket_tcp_server_address_in_use.cpp.s
+
+my_socket_tcp_stream_client.o: my_socket_tcp_stream_client.cpp.o
+
+.PHONY : my_socket_tcp_stream_client.o
+
+# target to build an object file
+my_socket_tcp_stream_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/my_socket_tcp_stream_client.cpp.o
+.PHONY : my_socket_tcp_stream_client.cpp.o
+
+my_socket_tcp_stream_client.i: my_socket_tcp_stream_client.cpp.i
+
+.PHONY : my_socket_tcp_stream_client.i
+
+# target to preprocess a source file
+my_socket_tcp_stream_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/my_socket_tcp_stream_client.cpp.i
+.PHONY : my_socket_tcp_stream_client.cpp.i
+
+my_socket_tcp_stream_client.s: my_socket_tcp_stream_client.cpp.s
+
+.PHONY : my_socket_tcp_stream_client.s
+
+# target to generate assembly for a file
+my_socket_tcp_stream_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/my_socket_tcp_stream_client.cpp.s
+.PHONY : my_socket_tcp_stream_client.cpp.s
+
+my_socket_tcp_stream_server.o: my_socket_tcp_stream_server.cpp.o
+
+.PHONY : my_socket_tcp_stream_server.o
+
+# target to build an object file
+my_socket_tcp_stream_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/my_socket_tcp_stream_server.cpp.o
+.PHONY : my_socket_tcp_stream_server.cpp.o
+
+my_socket_tcp_stream_server.i: my_socket_tcp_stream_server.cpp.i
+
+.PHONY : my_socket_tcp_stream_server.i
+
+# target to preprocess a source file
+my_socket_tcp_stream_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/my_socket_tcp_stream_server.cpp.i
+.PHONY : my_socket_tcp_stream_server.cpp.i
+
+my_socket_tcp_stream_server.s: my_socket_tcp_stream_server.cpp.s
+
+.PHONY : my_socket_tcp_stream_server.s
+
+# target to generate assembly for a file
+my_socket_tcp_stream_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/my_socket_tcp_stream_server.cpp.s
+.PHONY : my_socket_tcp_stream_server.cpp.s
+
 my_socket_test01.o: my_socket_test01.cpp.o
 
 .PHONY : my_socket_test01.o
 
 # target to build an object file
 my_socket_test01.cpp.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/socket_test01.dir/build.make examples/my_test/CMakeFiles/socket_test01.dir/my_socket_test01.cpp.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/my_socket_test01.cpp.o
 .PHONY : my_socket_test01.cpp.o
 
 my_socket_test01.i: my_socket_test01.cpp.i
@@ -281,7 +2060,7 @@ my_socket_test01.i: my_socket_test01.cpp.i
 
 # target to preprocess a source file
 my_socket_test01.cpp.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/socket_test01.dir/build.make examples/my_test/CMakeFiles/socket_test01.dir/my_socket_test01.cpp.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/my_socket_test01.cpp.i
 .PHONY : my_socket_test01.cpp.i
 
 my_socket_test01.s: my_socket_test01.cpp.s
@@ -290,8 +2069,119 @@ my_socket_test01.s: my_socket_test01.cpp.s
 
 # target to generate assembly for a file
 my_socket_test01.cpp.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/socket_test01.dir/build.make examples/my_test/CMakeFiles/socket_test01.dir/my_socket_test01.cpp.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/my_socket_test01.cpp.s
 .PHONY : my_socket_test01.cpp.s
+
+my_socket_udp_connect_client0.o: my_socket_udp_connect_client0.cpp.o
+
+.PHONY : my_socket_udp_connect_client0.o
+
+# target to build an object file
+my_socket_udp_connect_client0.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/my_socket_udp_connect_client0.cpp.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/my_socket_udp_connect_client0.cpp.o
+.PHONY : my_socket_udp_connect_client0.cpp.o
+
+my_socket_udp_connect_client0.i: my_socket_udp_connect_client0.cpp.i
+
+.PHONY : my_socket_udp_connect_client0.i
+
+# target to preprocess a source file
+my_socket_udp_connect_client0.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/my_socket_udp_connect_client0.cpp.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/my_socket_udp_connect_client0.cpp.i
+.PHONY : my_socket_udp_connect_client0.cpp.i
+
+my_socket_udp_connect_client0.s: my_socket_udp_connect_client0.cpp.s
+
+.PHONY : my_socket_udp_connect_client0.s
+
+# target to generate assembly for a file
+my_socket_udp_connect_client0.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/my_socket_udp_connect_client0.cpp.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/my_socket_udp_connect_client0.cpp.s
+.PHONY : my_socket_udp_connect_client0.cpp.s
+
+my_socket_udp_connect_server.o: my_socket_udp_connect_server.cpp.o
+
+.PHONY : my_socket_udp_connect_server.o
+
+# target to build an object file
+my_socket_udp_connect_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/my_socket_udp_connect_server.cpp.o
+.PHONY : my_socket_udp_connect_server.cpp.o
+
+my_socket_udp_connect_server.i: my_socket_udp_connect_server.cpp.i
+
+.PHONY : my_socket_udp_connect_server.i
+
+# target to preprocess a source file
+my_socket_udp_connect_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/my_socket_udp_connect_server.cpp.i
+.PHONY : my_socket_udp_connect_server.cpp.i
+
+my_socket_udp_connect_server.s: my_socket_udp_connect_server.cpp.s
+
+.PHONY : my_socket_udp_connect_server.s
+
+# target to generate assembly for a file
+my_socket_udp_connect_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/my_socket_udp_connect_server.cpp.s
+.PHONY : my_socket_udp_connect_server.cpp.s
+
+my_tcp_keep_alive_client.o: my_tcp_keep_alive_client.cpp.o
+
+.PHONY : my_tcp_keep_alive_client.o
+
+# target to build an object file
+my_tcp_keep_alive_client.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/my_tcp_keep_alive_client.cpp.o
+.PHONY : my_tcp_keep_alive_client.cpp.o
+
+my_tcp_keep_alive_client.i: my_tcp_keep_alive_client.cpp.i
+
+.PHONY : my_tcp_keep_alive_client.i
+
+# target to preprocess a source file
+my_tcp_keep_alive_client.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/my_tcp_keep_alive_client.cpp.i
+.PHONY : my_tcp_keep_alive_client.cpp.i
+
+my_tcp_keep_alive_client.s: my_tcp_keep_alive_client.cpp.s
+
+.PHONY : my_tcp_keep_alive_client.s
+
+# target to generate assembly for a file
+my_tcp_keep_alive_client.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/my_tcp_keep_alive_client.cpp.s
+.PHONY : my_tcp_keep_alive_client.cpp.s
+
+my_tcp_keep_alive_server.o: my_tcp_keep_alive_server.cpp.o
+
+.PHONY : my_tcp_keep_alive_server.o
+
+# target to build an object file
+my_tcp_keep_alive_server.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/my_tcp_keep_alive_server.cpp.o
+.PHONY : my_tcp_keep_alive_server.cpp.o
+
+my_tcp_keep_alive_server.i: my_tcp_keep_alive_server.cpp.i
+
+.PHONY : my_tcp_keep_alive_server.i
+
+# target to preprocess a source file
+my_tcp_keep_alive_server.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/my_tcp_keep_alive_server.cpp.i
+.PHONY : my_tcp_keep_alive_server.cpp.i
+
+my_tcp_keep_alive_server.s: my_tcp_keep_alive_server.cpp.s
+
+.PHONY : my_tcp_keep_alive_server.s
+
+# target to generate assembly for a file
+my_tcp_keep_alive_server.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/my_tcp_keep_alive_server.cpp.s
+.PHONY : my_tcp_keep_alive_server.cpp.s
 
 # Help Target
 help:
@@ -300,24 +2190,211 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... my__thread_test"
 	@echo "... install/local"
-	@echo "... test"
-	@echo "... socket_test01"
+	@echo "... install"
 	@echo "... edit_cache"
-	@echo "... my_function_test"
+	@echo "... test"
+	@echo "... my_socket_multi_thread_server02"
+	@echo "... my_socket_close_shutdown_client"
+	@echo "... my_tcp_keep_alive_client"
+	@echo "... my_socket_udp_connect_client"
+	@echo "... my_socket_close_shutdown_server"
+	@echo "... my_socket_local_udpserver"
+	@echo "... my_socket_tcp_exception_server01"
+	@echo "... my_socket_test01"
+	@echo "... my_socket_client_tcp"
+	@echo "... my_socket_batchwrite_client"
+	@echo "... my_socket_select_client"
+	@echo "... my_socket_homework_server"
 	@echo "... rebuild_cache"
+	@echo "... my__thread_test"
+	@echo "... my_socket_local_tcpclient"
+	@echo "... my_socket_client_udp"
+	@echo "... my_socket_tcp_stream_server"
+	@echo "... my_tcp_keep_alive_server"
+	@echo "... my_socket_server_udp"
+	@echo "... my_socket_server_tcp"
+	@echo "... my_socket_udp_connect_server"
+	@echo "... my_function_test"
+	@echo "... my_socket_nonblocking_IO_server"
+	@echo "... my_socket_reactor_server"
+	@echo "... my_common_test"
+	@echo "... my_socket_tcp_server_address_in_use"
+	@echo "... my_socket_udp_connect_client0"
+	@echo "... my_socket_tcp_exception_client01"
+	@echo "... my_socket_local_tcpserver"
+	@echo "... my_socket_epoll_server"
+	@echo "... my_socket_multi_process_server"
+	@echo "... my_socket_tcp_stream_client"
+	@echo "... list_install_components"
+	@echo "... my_socket_homework_client"
+	@echo "... my_socket_select_server"
+	@echo "... my_socket_poll_server"
+	@echo "... my_socket_poll_client"
+	@echo "... my_socket_local_udpclient"
+	@echo "... my_socket_mutil_thread_server01"
+	@echo "... lib/acceptor.o"
+	@echo "... lib/acceptor.i"
+	@echo "... lib/acceptor.s"
+	@echo "... lib/buffer.o"
+	@echo "... lib/buffer.i"
+	@echo "... lib/buffer.s"
+	@echo "... lib/channel.o"
+	@echo "... lib/channel.i"
+	@echo "... lib/channel.s"
+	@echo "... lib/channel_map.o"
+	@echo "... lib/channel_map.i"
+	@echo "... lib/channel_map.s"
+	@echo "... lib/event_loop.o"
+	@echo "... lib/event_loop.i"
+	@echo "... lib/event_loop.s"
+	@echo "... lib/event_loop_thread.o"
+	@echo "... lib/event_loop_thread.i"
+	@echo "... lib/event_loop_thread.s"
+	@echo "... lib/http_request.o"
+	@echo "... lib/http_request.i"
+	@echo "... lib/http_request.s"
+	@echo "... lib/http_response.o"
+	@echo "... lib/http_response.i"
+	@echo "... lib/http_response.s"
+	@echo "... lib/http_server.o"
+	@echo "... lib/http_server.i"
+	@echo "... lib/http_server.s"
+	@echo "... lib/log.o"
+	@echo "... lib/log.i"
+	@echo "... lib/log.s"
+	@echo "... lib/poll_dispatcher.o"
+	@echo "... lib/poll_dispatcher.i"
+	@echo "... lib/poll_dispatcher.s"
+	@echo "... lib/read.o"
+	@echo "... lib/read.i"
+	@echo "... lib/read.s"
+	@echo "... lib/sock_ntop.o"
+	@echo "... lib/sock_ntop.i"
+	@echo "... lib/sock_ntop.s"
+	@echo "... lib/tcp_client.o"
+	@echo "... lib/tcp_client.i"
+	@echo "... lib/tcp_client.s"
+	@echo "... lib/tcp_connection.o"
+	@echo "... lib/tcp_connection.i"
+	@echo "... lib/tcp_connection.s"
+	@echo "... lib/tcp_server.o"
+	@echo "... lib/tcp_server.i"
+	@echo "... lib/tcp_server.s"
+	@echo "... lib/thread_pool.o"
+	@echo "... lib/thread_pool.i"
+	@echo "... lib/thread_pool.s"
+	@echo "... lib/utils.o"
+	@echo "... lib/utils.i"
+	@echo "... lib/utils.s"
 	@echo "... my__thread_test.o"
 	@echo "... my__thread_test.i"
 	@echo "... my__thread_test.s"
+	@echo "... my_common_test.o"
+	@echo "... my_common_test.i"
+	@echo "... my_common_test.s"
 	@echo "... my_function_test.o"
 	@echo "... my_function_test.i"
 	@echo "... my_function_test.s"
+	@echo "... my_socket_batchwrite_client.o"
+	@echo "... my_socket_batchwrite_client.i"
+	@echo "... my_socket_batchwrite_client.s"
+	@echo "... my_socket_client_tcp.o"
+	@echo "... my_socket_client_tcp.i"
+	@echo "... my_socket_client_tcp.s"
+	@echo "... my_socket_client_udp.o"
+	@echo "... my_socket_client_udp.i"
+	@echo "... my_socket_client_udp.s"
+	@echo "... my_socket_close_shutdown_client.o"
+	@echo "... my_socket_close_shutdown_client.i"
+	@echo "... my_socket_close_shutdown_client.s"
+	@echo "... my_socket_close_shutdown_server.o"
+	@echo "... my_socket_close_shutdown_server.i"
+	@echo "... my_socket_close_shutdown_server.s"
+	@echo "... my_socket_epoll_server.o"
+	@echo "... my_socket_epoll_server.i"
+	@echo "... my_socket_epoll_server.s"
+	@echo "... my_socket_homework_client.o"
+	@echo "... my_socket_homework_client.i"
+	@echo "... my_socket_homework_client.s"
+	@echo "... my_socket_homework_server.o"
+	@echo "... my_socket_homework_server.i"
+	@echo "... my_socket_homework_server.s"
+	@echo "... my_socket_local_tcpclient.o"
+	@echo "... my_socket_local_tcpclient.i"
+	@echo "... my_socket_local_tcpclient.s"
+	@echo "... my_socket_local_tcpserver.o"
+	@echo "... my_socket_local_tcpserver.i"
+	@echo "... my_socket_local_tcpserver.s"
+	@echo "... my_socket_local_udpclient.o"
+	@echo "... my_socket_local_udpclient.i"
+	@echo "... my_socket_local_udpclient.s"
+	@echo "... my_socket_local_udpserver.o"
+	@echo "... my_socket_local_udpserver.i"
+	@echo "... my_socket_local_udpserver.s"
+	@echo "... my_socket_multi_process_server.o"
+	@echo "... my_socket_multi_process_server.i"
+	@echo "... my_socket_multi_process_server.s"
+	@echo "... my_socket_multi_thread_server02.o"
+	@echo "... my_socket_multi_thread_server02.i"
+	@echo "... my_socket_multi_thread_server02.s"
+	@echo "... my_socket_mutil_thread_server01.o"
+	@echo "... my_socket_mutil_thread_server01.i"
+	@echo "... my_socket_mutil_thread_server01.s"
+	@echo "... my_socket_nonblocking_IO_server.o"
+	@echo "... my_socket_nonblocking_IO_server.i"
+	@echo "... my_socket_nonblocking_IO_server.s"
+	@echo "... my_socket_poll_client.o"
+	@echo "... my_socket_poll_client.i"
+	@echo "... my_socket_poll_client.s"
+	@echo "... my_socket_poll_server.o"
+	@echo "... my_socket_poll_server.i"
+	@echo "... my_socket_poll_server.s"
+	@echo "... my_socket_reactor_server.o"
+	@echo "... my_socket_reactor_server.i"
+	@echo "... my_socket_reactor_server.s"
+	@echo "... my_socket_select_client.o"
+	@echo "... my_socket_select_client.i"
+	@echo "... my_socket_select_client.s"
+	@echo "... my_socket_select_server.o"
+	@echo "... my_socket_select_server.i"
+	@echo "... my_socket_select_server.s"
+	@echo "... my_socket_server_tcp.o"
+	@echo "... my_socket_server_tcp.i"
+	@echo "... my_socket_server_tcp.s"
+	@echo "... my_socket_server_udp.o"
+	@echo "... my_socket_server_udp.i"
+	@echo "... my_socket_server_udp.s"
+	@echo "... my_socket_tcp_exception_client01.o"
+	@echo "... my_socket_tcp_exception_client01.i"
+	@echo "... my_socket_tcp_exception_client01.s"
+	@echo "... my_socket_tcp_exception_server01.o"
+	@echo "... my_socket_tcp_exception_server01.i"
+	@echo "... my_socket_tcp_exception_server01.s"
+	@echo "... my_socket_tcp_server_address_in_use.o"
+	@echo "... my_socket_tcp_server_address_in_use.i"
+	@echo "... my_socket_tcp_server_address_in_use.s"
+	@echo "... my_socket_tcp_stream_client.o"
+	@echo "... my_socket_tcp_stream_client.i"
+	@echo "... my_socket_tcp_stream_client.s"
+	@echo "... my_socket_tcp_stream_server.o"
+	@echo "... my_socket_tcp_stream_server.i"
+	@echo "... my_socket_tcp_stream_server.s"
 	@echo "... my_socket_test01.o"
 	@echo "... my_socket_test01.i"
 	@echo "... my_socket_test01.s"
+	@echo "... my_socket_udp_connect_client0.o"
+	@echo "... my_socket_udp_connect_client0.i"
+	@echo "... my_socket_udp_connect_client0.s"
+	@echo "... my_socket_udp_connect_server.o"
+	@echo "... my_socket_udp_connect_server.i"
+	@echo "... my_socket_udp_connect_server.s"
+	@echo "... my_tcp_keep_alive_client.o"
+	@echo "... my_tcp_keep_alive_client.i"
+	@echo "... my_tcp_keep_alive_client.s"
+	@echo "... my_tcp_keep_alive_server.o"
+	@echo "... my_tcp_keep_alive_server.i"
+	@echo "... my_tcp_keep_alive_server.s"
 .PHONY : help
 
 

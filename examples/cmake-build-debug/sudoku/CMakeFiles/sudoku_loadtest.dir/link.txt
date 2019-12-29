@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/sudoku_loadtest.dir/loadtest.o CMakeFiles/sudoku_loadtest.dir/sudoku.o  -o sudoku_loadtest -lmuduo_net 

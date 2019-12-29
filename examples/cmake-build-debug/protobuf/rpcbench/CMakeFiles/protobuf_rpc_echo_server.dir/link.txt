@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/protobuf_rpc_echo_server.dir/server.o  -o protobuf_rpc_echo_server  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/protobuf/rpcbench libecho_proto.a -lmuduo_protorpc -lprotobuf -lpthread 

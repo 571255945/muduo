@@ -1,0 +1,8 @@
+# Hashes of file build rules.
+42244de7e91cb58d824ddaf7b09148ff ace/logging/logrecord.pb.cc
+e09f51cc226ace444caed19128f5d966 protobuf/codec/CMakeFiles/protobuf_codec_all
+45b40815bd988a305b162d906949ecb4 protobuf/codec/query.pb.cc
+5334d5ace4ab4cc0c56885760f87e922 protobuf/resolver/resolver.pb.cc
+dd76ec1580c2bee5396d6e83bd2045ff protobuf/rpc/CMakeFiles/protobuf_rpc_all
+08b79661c7d25b0df9202223b3676cf0 protobuf/rpc/sudoku.pb.cc
+201c6d0d606e3c4bd342e419b5de3fde protobuf/rpcbench/echo.pb.cc

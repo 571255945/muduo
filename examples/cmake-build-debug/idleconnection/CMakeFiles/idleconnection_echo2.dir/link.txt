@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/idleconnection_echo2.dir/sortedlist.o  -o idleconnection_echo2 -lmuduo_net 

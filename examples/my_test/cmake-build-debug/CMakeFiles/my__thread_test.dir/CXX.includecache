@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my__thread_test.cpp
+iostream
+-
+pthread.h
+-
+unistd.h
+-
+pthread.h
+-
+unistd.h
+-
+iostream
+-
+thread
+-
+iostream
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/sudoku_client_batch.dir/batch.o CMakeFiles/sudoku_client_batch.dir/sudoku.o  -o sudoku_client_batch -lmuduo_net 

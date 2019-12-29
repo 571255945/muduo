@@ -96,7 +96,10 @@ if(THRIFT_COMPILER AND THRIFT_INCLUDE_DIR AND THRIFT_LIBRARY)
   message(STATUS "found thrift")
 endif()
 
+include_directories(/home/yuanye/WorkSpace/Git/My_Github/muduo)
+
 include_directories(/home/yuanye/WorkSpace/Git)
+
 
 include_directories(${Boost_INCLUDE_DIRS})
 
@@ -111,6 +114,7 @@ add_subdirectory(muduo/net)
 if(MUDUO_BUILD_EXAMPLES)
   add_subdirectory(contrib)
   add_subdirectory(examples)
+  add_subdirectory(my_socket_framework)
 else()
   if(CARES_INCLUDE_DIR AND CARES_LIBRARY)
     add_subdirectory(examples/cdns)

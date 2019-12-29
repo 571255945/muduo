@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/mcurl.dir/mcurl.o  -o mcurl  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/curl libmuduo_curl.a -lmuduo_net -lcurl 

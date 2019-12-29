@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/maxconnection_echo.dir/echo.o CMakeFiles/maxconnection_echo.dir/main.o  -o maxconnection_echo -lmuduo_net 

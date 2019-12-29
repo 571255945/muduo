@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/cdns.dir/dns.o  -o cdns  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/cdns libmuduo_cdns.a -lmuduo_net -lcares 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/protobuf_rpc_balancer.dir/balancer.o  -o protobuf_rpc_balancer -lmuduo_protorpc 

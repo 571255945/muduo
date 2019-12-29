@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/simple_allinone.dir/allinone/allinone.o CMakeFiles/simple_allinone.dir/chargen/chargen.o CMakeFiles/simple_allinone.dir/daytime/daytime.o CMakeFiles/simple_allinone.dir/discard/discard.o CMakeFiles/simple_allinone.dir/echo/echo.o CMakeFiles/simple_allinone.dir/time/time.o  -o simple_allinone -lmuduo_net 

@@ -302,6 +302,33 @@ simple_echo/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/build
 .PHONY : simple_echo/fast
 
+__/muduo_test/test.o: __/muduo_test/test.cpp.o
+
+.PHONY : __/muduo_test/test.o
+
+# target to build an object file
+__/muduo_test/test.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/__/muduo_test/test.cpp.o
+.PHONY : __/muduo_test/test.cpp.o
+
+__/muduo_test/test.i: __/muduo_test/test.cpp.i
+
+.PHONY : __/muduo_test/test.i
+
+# target to preprocess a source file
+__/muduo_test/test.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/__/muduo_test/test.cpp.i
+.PHONY : __/muduo_test/test.cpp.i
+
+__/muduo_test/test.s: __/muduo_test/test.cpp.s
+
+.PHONY : __/muduo_test/test.s
+
+# target to generate assembly for a file
+__/muduo_test/test.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/__/muduo_test/test.cpp.s
+.PHONY : __/muduo_test/test.cpp.s
+
 allinone/allinone.o: allinone/allinone.cc.o
 
 .PHONY : allinone/allinone.o
@@ -744,6 +771,9 @@ help:
 	@echo "... my_echo"
 	@echo "... rebuild_cache"
 	@echo "... simple_echo"
+	@echo "... __/muduo_test/test.o"
+	@echo "... __/muduo_test/test.i"
+	@echo "... __/muduo_test/test.s"
 	@echo "... allinone/allinone.o"
 	@echo "... allinone/allinone.i"
 	@echo "... allinone/allinone.s"

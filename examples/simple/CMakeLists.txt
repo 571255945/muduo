@@ -14,7 +14,7 @@ add_executable(simple_time time/time.cc time/main.cc)
 target_link_libraries(simple_time muduo_net)
 
 #test yuan
-add_executable(my_echo my_echo_test/my_echo.cpp my_echo_test/my_echo_main.cpp)
+add_executable(my_echo my_echo_test/my_echo.cpp my_echo_test/my_echo_main.cpp ../muduo_test/test.cpp)
 target_link_libraries(my_echo muduo_net)
 
 add_executable(simple_allinone
@@ -26,6 +26,11 @@ add_executable(simple_allinone
   time/time.cc
   )
 target_link_libraries(simple_allinone muduo_net)
+
+#include_directories(/home/yuanye/WorkSpace/Git/My_Github/muduo)
+#include_directories(/home/yuanye/WorkSpace/Git)
+#include_directories(${Boost_INCLUDE_DIRS})
+#include_directories(${PROJECT_SOURCE_DIR})
 
 add_executable(simple_timeclient timeclient/timeclient.cc)
 target_link_libraries(simple_timeclient muduo_net)

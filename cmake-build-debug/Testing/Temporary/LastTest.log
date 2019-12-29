@@ -1,0 +1,179 @@
+Start testing: Dec 28 22:32 CST
+----------------------------------------------------------
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/atomic_unittest
+1/11 Testing: atomic_unittest
+1/11 Test: atomic_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"atomic_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"atomic_unittest" end time: Dec 28 22:32 CST
+"atomic_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/date_unittest
+2/11 Testing: date_unittest
+2/11 Test: date_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"date_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"date_unittest" end time: Dec 28 22:32 CST
+"date_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/exception_test
+3/11 Testing: exception_test
+3/11 Test: exception_test
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"exception_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"exception_test" end time: Dec 28 22:32 CST
+"exception_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/fileutil_test
+4/11 Testing: fileutil_test
+4/11 Test: fileutil_test
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"fileutil_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"fileutil_test" end time: Dec 28 22:32 CST
+"fileutil_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/gzipfile_test
+5/11 Testing: gzipfile_test
+5/11 Test: gzipfile_test
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"gzipfile_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"gzipfile_test" end time: Dec 28 22:32 CST
+"gzipfile_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/logstream_test
+6/11 Testing: logstream_test
+6/11 Test: logstream_test
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"logstream_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"logstream_test" end time: Dec 28 22:32 CST
+"logstream_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/timestamp_unittest
+7/11 Testing: timestamp_unittest
+7/11 Test: timestamp_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"timestamp_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"timestamp_unittest" end time: Dec 28 22:32 CST
+"timestamp_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/timezone_unittest
+8/11 Testing: timezone_unittest
+8/11 Test: timezone_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/base/tests
+"timezone_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"timezone_unittest" end time: Dec 28 22:32 CST
+"timezone_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/buffer_unittest
+9/11 Testing: buffer_unittest
+9/11 Test: buffer_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/net/tests
+"buffer_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"buffer_unittest" end time: Dec 28 22:32 CST
+"buffer_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/inetaddress_unittest
+10/11 Testing: inetaddress_unittest
+10/11 Test: inetaddress_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/net/tests
+"inetaddress_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"inetaddress_unittest" end time: Dec 28 22:32 CST
+"inetaddress_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/bin/timerqueue_unittest
+11/11 Testing: timerqueue_unittest
+11/11 Test: timerqueue_unittest
+Command: ""
+Directory: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/net/tests
+"timerqueue_unittest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"timerqueue_unittest" end time: Dec 28 22:32 CST
+"timerqueue_unittest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 28 22:32 CST

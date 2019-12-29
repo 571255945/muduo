@@ -1,3 +1,8 @@
+find_package(Boost REQUIRED)
+include_directories(${Boost_INCLUDE_DIRS})
+find_library(BOOSTTEST_LIBRARY NAMES boost_unit_test_framework)
+find_library(BOOSTPO_LIBRARY NAMES boost_program_options)
+find_library(BOOSTSYSTEM_LIBRARY NAMES boost_system)
 #reactor
 if (EPOLL_EXISTS)
     set(rSRC

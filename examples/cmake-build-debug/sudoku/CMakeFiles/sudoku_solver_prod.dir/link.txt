@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/sudoku_solver_prod.dir/server_prod.o CMakeFiles/sudoku_solver_prod.dir/sudoku.o  -o sudoku_solver_prod -lmuduo_inspect 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/client.cc
+examples/asio/chat/codec.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/examples/asio/chat/codec.h
+muduo/base/Logging.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/muduo/base/Logging.h
+muduo/base/Mutex.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/muduo/base/Mutex.h
+muduo/net/EventLoopThread.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/muduo/net/EventLoopThread.h
+muduo/net/TcpClient.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/asio/chat/muduo/net/TcpClient.h
+iostream
+-
+stdio.h
+-
+unistd.h
+-
+

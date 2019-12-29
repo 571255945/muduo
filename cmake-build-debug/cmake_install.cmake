@@ -43,6 +43,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/muduo/net/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/contrib/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/cmake_install.cmake")
+  include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/my_socket_framework/cmake_install.cmake")
 
 endif()
 

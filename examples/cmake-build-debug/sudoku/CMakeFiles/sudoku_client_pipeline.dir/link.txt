@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/sudoku_client_pipeline.dir/pipeline.o CMakeFiles/sudoku_client_pipeline.dir/sudoku.o  -o sudoku_client_pipeline -lmuduo_net 

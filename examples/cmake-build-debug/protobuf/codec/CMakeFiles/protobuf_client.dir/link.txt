@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/protobuf_client.dir/client.o  -o protobuf_client  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/protobuf/codec libprotobuf_codec.a libquery_proto.a -lmuduo_net -lz -lprotobuf -lpthread 

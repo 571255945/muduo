@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/twisted_finger04.dir/finger04.o  -o twisted_finger04 -lmuduo_net 

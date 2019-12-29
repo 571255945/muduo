@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/my_socket_framework/acceptor.cpp
+acceptor.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/my_socket_framework/acceptor.h
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/my_socket_framework/acceptor.h
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/my_socket_framework/matrix_main.cpp
+iostream
+-
+

@@ -1806,6 +1806,162 @@ zeromq_local_lat/fast:
 .PHONY : zeromq_local_lat/fast
 
 #=============================================================================
+# Target rules for targets named my_socket_multi_thread_server02
+
+# Build rule for target.
+my_socket_multi_thread_server02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_multi_thread_server02
+.PHONY : my_socket_multi_thread_server02
+
+# fast build rule for target.
+my_socket_multi_thread_server02/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_thread_server02.dir/build
+.PHONY : my_socket_multi_thread_server02/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_close_shutdown_client
+
+# Build rule for target.
+my_socket_close_shutdown_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_close_shutdown_client
+.PHONY : my_socket_close_shutdown_client
+
+# fast build rule for target.
+my_socket_close_shutdown_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_client.dir/build
+.PHONY : my_socket_close_shutdown_client/fast
+
+#=============================================================================
+# Target rules for targets named my_tcp_keep_alive_client
+
+# Build rule for target.
+my_tcp_keep_alive_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_tcp_keep_alive_client
+.PHONY : my_tcp_keep_alive_client
+
+# fast build rule for target.
+my_tcp_keep_alive_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_client.dir/build
+.PHONY : my_tcp_keep_alive_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_udp_connect_client
+
+# Build rule for target.
+my_socket_udp_connect_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_udp_connect_client
+.PHONY : my_socket_udp_connect_client
+
+# fast build rule for target.
+my_socket_udp_connect_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client.dir/build
+.PHONY : my_socket_udp_connect_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_close_shutdown_server
+
+# Build rule for target.
+my_socket_close_shutdown_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_close_shutdown_server
+.PHONY : my_socket_close_shutdown_server
+
+# fast build rule for target.
+my_socket_close_shutdown_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build.make examples/my_test/CMakeFiles/my_socket_close_shutdown_server.dir/build
+.PHONY : my_socket_close_shutdown_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_local_udpserver
+
+# Build rule for target.
+my_socket_local_udpserver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_udpserver
+.PHONY : my_socket_local_udpserver
+
+# fast build rule for target.
+my_socket_local_udpserver/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/build
+.PHONY : my_socket_local_udpserver/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_tcp_exception_server01
+
+# Build rule for target.
+my_socket_tcp_exception_server01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_tcp_exception_server01
+.PHONY : my_socket_tcp_exception_server01
+
+# fast build rule for target.
+my_socket_tcp_exception_server01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build
+.PHONY : my_socket_tcp_exception_server01/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_test01
+
+# Build rule for target.
+my_socket_test01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_test01
+.PHONY : my_socket_test01
+
+# fast build rule for target.
+my_socket_test01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
+.PHONY : my_socket_test01/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_client_tcp
+
+# Build rule for target.
+my_socket_client_tcp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_client_tcp
+.PHONY : my_socket_client_tcp
+
+# fast build rule for target.
+my_socket_client_tcp/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_tcp.dir/build
+.PHONY : my_socket_client_tcp/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_batchwrite_client
+
+# Build rule for target.
+my_socket_batchwrite_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_batchwrite_client
+.PHONY : my_socket_batchwrite_client
+
+# fast build rule for target.
+my_socket_batchwrite_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build.make examples/my_test/CMakeFiles/my_socket_batchwrite_client.dir/build
+.PHONY : my_socket_batchwrite_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_select_client
+
+# Build rule for target.
+my_socket_select_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_select_client
+.PHONY : my_socket_select_client
+
+# fast build rule for target.
+my_socket_select_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_client.dir/build.make examples/my_test/CMakeFiles/my_socket_select_client.dir/build
+.PHONY : my_socket_select_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_homework_server
+
+# Build rule for target.
+my_socket_homework_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_homework_server
+.PHONY : my_socket_homework_server
+
+# fast build rule for target.
+my_socket_homework_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_server.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_server.dir/build
+.PHONY : my_socket_homework_server/fast
+
+#=============================================================================
 # Target rules for targets named my__thread_test
 
 # Build rule for target.
@@ -1819,17 +1975,95 @@ my__thread_test/fast:
 .PHONY : my__thread_test/fast
 
 #=============================================================================
-# Target rules for targets named socket_test01
+# Target rules for targets named my_socket_local_tcpclient
 
 # Build rule for target.
-socket_test01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 socket_test01
-.PHONY : socket_test01
+my_socket_local_tcpclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_tcpclient
+.PHONY : my_socket_local_tcpclient
 
 # fast build rule for target.
-socket_test01/fast:
-	$(MAKE) -f examples/my_test/CMakeFiles/socket_test01.dir/build.make examples/my_test/CMakeFiles/socket_test01.dir/build
-.PHONY : socket_test01/fast
+my_socket_local_tcpclient/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpclient.dir/build
+.PHONY : my_socket_local_tcpclient/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_client_udp
+
+# Build rule for target.
+my_socket_client_udp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_client_udp
+.PHONY : my_socket_client_udp
+
+# fast build rule for target.
+my_socket_client_udp/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_client_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_client_udp.dir/build
+.PHONY : my_socket_client_udp/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_tcp_stream_server
+
+# Build rule for target.
+my_socket_tcp_stream_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_tcp_stream_server
+.PHONY : my_socket_tcp_stream_server
+
+# fast build rule for target.
+my_socket_tcp_stream_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build
+.PHONY : my_socket_tcp_stream_server/fast
+
+#=============================================================================
+# Target rules for targets named my_tcp_keep_alive_server
+
+# Build rule for target.
+my_tcp_keep_alive_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_tcp_keep_alive_server
+.PHONY : my_tcp_keep_alive_server
+
+# fast build rule for target.
+my_tcp_keep_alive_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build.make examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/build
+.PHONY : my_tcp_keep_alive_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_server_udp
+
+# Build rule for target.
+my_socket_server_udp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_server_udp
+.PHONY : my_socket_server_udp
+
+# fast build rule for target.
+my_socket_server_udp/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_udp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_udp.dir/build
+.PHONY : my_socket_server_udp/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_server_tcp
+
+# Build rule for target.
+my_socket_server_tcp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_server_tcp
+.PHONY : my_socket_server_tcp
+
+# fast build rule for target.
+my_socket_server_tcp/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build.make examples/my_test/CMakeFiles/my_socket_server_tcp.dir/build
+.PHONY : my_socket_server_tcp/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_udp_connect_server
+
+# Build rule for target.
+my_socket_udp_connect_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_udp_connect_server
+.PHONY : my_socket_udp_connect_server
+
+# fast build rule for target.
+my_socket_udp_connect_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_server.dir/build
+.PHONY : my_socket_udp_connect_server/fast
 
 #=============================================================================
 # Target rules for targets named my_function_test
@@ -1843,6 +2077,227 @@ my_function_test: cmake_check_build_system
 my_function_test/fast:
 	$(MAKE) -f examples/my_test/CMakeFiles/my_function_test.dir/build.make examples/my_test/CMakeFiles/my_function_test.dir/build
 .PHONY : my_function_test/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_nonblocking_IO_server
+
+# Build rule for target.
+my_socket_nonblocking_IO_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_nonblocking_IO_server
+.PHONY : my_socket_nonblocking_IO_server
+
+# fast build rule for target.
+my_socket_nonblocking_IO_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build.make examples/my_test/CMakeFiles/my_socket_nonblocking_IO_server.dir/build
+.PHONY : my_socket_nonblocking_IO_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_reactor_server
+
+# Build rule for target.
+my_socket_reactor_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_reactor_server
+.PHONY : my_socket_reactor_server
+
+# fast build rule for target.
+my_socket_reactor_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build.make examples/my_test/CMakeFiles/my_socket_reactor_server.dir/build
+.PHONY : my_socket_reactor_server/fast
+
+#=============================================================================
+# Target rules for targets named my_common_test
+
+# Build rule for target.
+my_common_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_common_test
+.PHONY : my_common_test
+
+# fast build rule for target.
+my_common_test/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/build
+.PHONY : my_common_test/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_tcp_server_address_in_use
+
+# Build rule for target.
+my_socket_tcp_server_address_in_use: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_tcp_server_address_in_use
+.PHONY : my_socket_tcp_server_address_in_use
+
+# fast build rule for target.
+my_socket_tcp_server_address_in_use/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_server_address_in_use.dir/build
+.PHONY : my_socket_tcp_server_address_in_use/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_udp_connect_client0
+
+# Build rule for target.
+my_socket_udp_connect_client0: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_udp_connect_client0
+.PHONY : my_socket_udp_connect_client0
+
+# fast build rule for target.
+my_socket_udp_connect_client0/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build.make examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/build
+.PHONY : my_socket_udp_connect_client0/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_tcp_exception_client01
+
+# Build rule for target.
+my_socket_tcp_exception_client01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_tcp_exception_client01
+.PHONY : my_socket_tcp_exception_client01
+
+# fast build rule for target.
+my_socket_tcp_exception_client01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_client01.dir/build
+.PHONY : my_socket_tcp_exception_client01/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_local_tcpserver
+
+# Build rule for target.
+my_socket_local_tcpserver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_tcpserver
+.PHONY : my_socket_local_tcpserver
+
+# fast build rule for target.
+my_socket_local_tcpserver/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build.make examples/my_test/CMakeFiles/my_socket_local_tcpserver.dir/build
+.PHONY : my_socket_local_tcpserver/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_epoll_server
+
+# Build rule for target.
+my_socket_epoll_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_epoll_server
+.PHONY : my_socket_epoll_server
+
+# fast build rule for target.
+my_socket_epoll_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_epoll_server.dir/build
+.PHONY : my_socket_epoll_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_multi_process_server
+
+# Build rule for target.
+my_socket_multi_process_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_multi_process_server
+.PHONY : my_socket_multi_process_server
+
+# fast build rule for target.
+my_socket_multi_process_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build.make examples/my_test/CMakeFiles/my_socket_multi_process_server.dir/build
+.PHONY : my_socket_multi_process_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_tcp_stream_client
+
+# Build rule for target.
+my_socket_tcp_stream_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_tcp_stream_client
+.PHONY : my_socket_tcp_stream_client
+
+# fast build rule for target.
+my_socket_tcp_stream_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_client.dir/build
+.PHONY : my_socket_tcp_stream_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_homework_client
+
+# Build rule for target.
+my_socket_homework_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_homework_client
+.PHONY : my_socket_homework_client
+
+# fast build rule for target.
+my_socket_homework_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_homework_client.dir/build.make examples/my_test/CMakeFiles/my_socket_homework_client.dir/build
+.PHONY : my_socket_homework_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_select_server
+
+# Build rule for target.
+my_socket_select_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_select_server
+.PHONY : my_socket_select_server
+
+# fast build rule for target.
+my_socket_select_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_select_server.dir/build.make examples/my_test/CMakeFiles/my_socket_select_server.dir/build
+.PHONY : my_socket_select_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_poll_server
+
+# Build rule for target.
+my_socket_poll_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_poll_server
+.PHONY : my_socket_poll_server
+
+# fast build rule for target.
+my_socket_poll_server/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_server.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_server.dir/build
+.PHONY : my_socket_poll_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_poll_client
+
+# Build rule for target.
+my_socket_poll_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_poll_client
+.PHONY : my_socket_poll_client
+
+# fast build rule for target.
+my_socket_poll_client/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/build
+.PHONY : my_socket_poll_client/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_local_udpclient
+
+# Build rule for target.
+my_socket_local_udpclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_udpclient
+.PHONY : my_socket_local_udpclient
+
+# fast build rule for target.
+my_socket_local_udpclient/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
+.PHONY : my_socket_local_udpclient/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_mutil_thread_server01
+
+# Build rule for target.
+my_socket_mutil_thread_server01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_mutil_thread_server01
+.PHONY : my_socket_mutil_thread_server01
+
+# fast build rule for target.
+my_socket_mutil_thread_server01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
+.PHONY : my_socket_mutil_thread_server01/fast
+
+#=============================================================================
+# Target rules for targets named test_racecondition
+
+# Build rule for target.
+test_racecondition: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_racecondition
+.PHONY : test_racecondition
+
+# fast build rule for target.
+test_racecondition/fast:
+	$(MAKE) -f examples/muduo_test/CMakeFiles/test_racecondition.dir/build.make examples/muduo_test/CMakeFiles/test_racecondition.dir/build
+.PHONY : test_racecondition/fast
 
 #=============================================================================
 # Target rules for targets named cdns
@@ -2247,6 +2702,19 @@ dummyload/fast:
 	$(MAKE) -f examples/procmon/CMakeFiles/dummyload.dir/build.make examples/procmon/CMakeFiles/dummyload.dir/build
 .PHONY : dummyload/fast
 
+#=============================================================================
+# Target rules for targets named matrix_framework
+
+# Build rule for target.
+matrix_framework: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix_framework
+.PHONY : matrix_framework
+
+# fast build rule for target.
+matrix_framework/fast:
+	$(MAKE) -f my_socket_framework/CMakeFiles/matrix_framework.dir/build.make my_socket_framework/CMakeFiles/matrix_framework.dir/build
+.PHONY : matrix_framework/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2386,9 +2854,44 @@ help:
 	@echo "... wordcount_hasher"
 	@echo "... zeromq_remote_lat"
 	@echo "... zeromq_local_lat"
+	@echo "... my_socket_multi_thread_server02"
+	@echo "... my_socket_close_shutdown_client"
+	@echo "... my_tcp_keep_alive_client"
+	@echo "... my_socket_udp_connect_client"
+	@echo "... my_socket_close_shutdown_server"
+	@echo "... my_socket_local_udpserver"
+	@echo "... my_socket_tcp_exception_server01"
+	@echo "... my_socket_test01"
+	@echo "... my_socket_client_tcp"
+	@echo "... my_socket_batchwrite_client"
+	@echo "... my_socket_select_client"
+	@echo "... my_socket_homework_server"
 	@echo "... my__thread_test"
-	@echo "... socket_test01"
+	@echo "... my_socket_local_tcpclient"
+	@echo "... my_socket_client_udp"
+	@echo "... my_socket_tcp_stream_server"
+	@echo "... my_tcp_keep_alive_server"
+	@echo "... my_socket_server_udp"
+	@echo "... my_socket_server_tcp"
+	@echo "... my_socket_udp_connect_server"
 	@echo "... my_function_test"
+	@echo "... my_socket_nonblocking_IO_server"
+	@echo "... my_socket_reactor_server"
+	@echo "... my_common_test"
+	@echo "... my_socket_tcp_server_address_in_use"
+	@echo "... my_socket_udp_connect_client0"
+	@echo "... my_socket_tcp_exception_client01"
+	@echo "... my_socket_local_tcpserver"
+	@echo "... my_socket_epoll_server"
+	@echo "... my_socket_multi_process_server"
+	@echo "... my_socket_tcp_stream_client"
+	@echo "... my_socket_homework_client"
+	@echo "... my_socket_select_server"
+	@echo "... my_socket_poll_server"
+	@echo "... my_socket_poll_client"
+	@echo "... my_socket_local_udpclient"
+	@echo "... my_socket_mutil_thread_server01"
+	@echo "... test_racecondition"
 	@echo "... cdns"
 	@echo "... muduo_cdns"
 	@echo "... mcurl"
@@ -2420,6 +2923,7 @@ help:
 	@echo "... plot_test"
 	@echo "... procmon"
 	@echo "... dummyload"
+	@echo "... matrix_framework"
 .PHONY : help
 
 

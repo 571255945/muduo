@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/ace_logging_client.dir/client.o  -o ace_logging_client  -L/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/cmake-build-debug/ace/logging -lmuduo_protobuf_codec libace_logging_proto.a -lprotobuf -lpthread 

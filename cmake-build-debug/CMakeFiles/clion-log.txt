@@ -4,6 +4,7 @@
 -- found protobuf
 -- found zlib
 -- CXX_FLAGS = -g -DCHECK_PTHREAD_RETURN_VALUE -D_FILE_OFFSET_BITS=64 -Wall -Wextra -Werror -Wconversion -Wno-unused-parameter -Wold-style-cast -Woverloaded-virtual -Wpointer-arith -Wshadow -Wwrite-strings -march=native -std=c++11 -rdynamic -O0
+-- Boost version: 1.62.0
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug

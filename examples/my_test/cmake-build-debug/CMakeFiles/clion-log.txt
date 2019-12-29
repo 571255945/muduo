@@ -1,4 +1,5 @@
 /home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test
+-- Boost version: 1.62.0
 CMake Warning (dev) in CMakeLists.txt:
   No cmake_minimum_required command is present.  A line of code such as
 

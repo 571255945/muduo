@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/sudoku_solver_hybrid.dir/server_hybrid.o CMakeFiles/sudoku_solver_hybrid.dir/sudoku.o  -o sudoku_solver_hybrid -lmuduo_inspect 

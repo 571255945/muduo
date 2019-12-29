@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/objectpool.cpp
+boost/noncopyable.hpp
+-
+mutex
+-
+thread
+-
+memory
+-
+unordered_map
+-
+iostream
+-
+map
+-
+string
+-
+functional
+-
+boost/bind.hpp
+-
+boost/enable_shared_from_this.hpp
+-
+boost/shared_ptr.hpp
+-
+boost/weak_ptr.hpp
+-
+

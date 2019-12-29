@@ -63,6 +63,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/wordcount/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/zeromq/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/my_test/cmake_install.cmake")
+  include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/muduo_test/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/ace/logging/cmake_install.cmake")
   include("/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/protobuf/cmake_install.cmake")
 

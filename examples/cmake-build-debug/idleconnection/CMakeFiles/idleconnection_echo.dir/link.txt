@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/idleconnection_echo.dir/echo.o CMakeFiles/idleconnection_echo.dir/main.o  -o idleconnection_echo -lmuduo_net 

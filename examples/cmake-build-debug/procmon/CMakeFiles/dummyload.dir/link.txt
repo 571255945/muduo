@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/dummyload.dir/dummyload.o  -o dummyload -lmuduo_net 

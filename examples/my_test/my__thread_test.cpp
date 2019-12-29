@@ -2,7 +2,7 @@
 // Created by root on 9/28/19.
 //
 
-#if 1
+#if 0
 #include<iostream>
 #include<pthread.h>
 #include<unistd.h>
@@ -113,4 +113,25 @@ static void* worker2(void* arg){
 //10
 //上面简单的事例中，总共有三个线程（包括主线程），可以看到通过__thread 修饰的变量，
 //在线程中地址都不一样，__thread变量每一个线程有一份独立实体，各个线程的值互不干扰。
+#endif
+
+#if 1
+#include <thread>
+#include <iostream>
+using namespace std;
+
+void fun1(int n)
+{
+    cout<<"func1"<<endl;
+}
+
+int main()
+{
+    cout<<"124"<<endl;
+    std::thread t1(fun1,3);
+    std::thread t2()
+    t1.join();
+    return 0;
+}
+
 #endif
