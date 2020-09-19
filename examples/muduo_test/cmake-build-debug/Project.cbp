@@ -27,6 +27,52 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="matrix_test">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/matrix_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix_test/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/matrix_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="test_racecondition">
 				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/test_racecondition" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
@@ -83,6 +129,52 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="signaltest">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/signaltest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 signaltest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="signaltest/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/signaltest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 signaltest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="objectpool">
 				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/cmake-build-debug/objectpool" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir=""/>
@@ -130,8 +222,20 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/SignalSlot.h">
+			<Option target="signaltest"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/SignalSlotTrivial.h">
+			<Option target="signaltest"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/matrix_test.cpp">
+			<Option target="matrix_test"/>
+		</Unit>
 		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/objectpool.cpp">
 			<Option target="objectpool"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/signaltest.cpp">
+			<Option target="signaltest"/>
 		</Unit>
 		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/test.cpp">
 			<Option target="test_racecondition"/>

@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/matrix_test.cpp
+iostream
+-
+mutex
+-
+thread
+-
+functional
+-
+vector
+-
+memory
+-
+time.h
+-
+stdio.h
+-
+unistd.h
+-
+iostream
+-
+

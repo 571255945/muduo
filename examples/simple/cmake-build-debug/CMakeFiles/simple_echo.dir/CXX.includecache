@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/echo.cc
+examples/simple/echo/echo.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/examples/simple/echo/echo.h
+muduo/base/Logging.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/muduo/base/Logging.h
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/main.cc
+examples/simple/echo/echo.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/examples/simple/echo/echo.h
+muduo/base/Logging.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/muduo/base/Logging.h
+muduo/net/EventLoop.h
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/muduo/net/EventLoop.h
+unistd.h
+-
+

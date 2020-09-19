@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_chargenclient">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_chargenclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_chargenclient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_chargenclient/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_chargenclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_chargenclient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_timeclient">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_timeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_timeclient"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_timeclient/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_timeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_timeclient/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_allinone">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_allinone" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_allinone"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_allinone/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_allinone" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_allinone/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_daytime">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_daytime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_daytime"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_daytime/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_daytime" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_daytime/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_chargen">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_chargen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_chargen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_chargen/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_chargen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_chargen/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_discard">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_discard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_discard"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_discard/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_discard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_discard/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_time">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_time" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_time"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_time/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_time" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_time/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_echo">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/my_echo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_echo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_echo/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/my_echo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_echo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_echo">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_echo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_echo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple_echo/fast">
+				<Option output="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/simple_echo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 simple_echo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/muduo_test/test.cpp">
+			<Option target="my_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/allinone/allinone.cc">
+			<Option target="simple_allinone"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/chargen/chargen.cc">
+			<Option target="simple_allinone"/>
+			<Option target="simple_chargen"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/chargen/chargen.h">
+			<Option target="simple_allinone"/>
+			<Option target="simple_chargen"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/chargen/main.cc">
+			<Option target="simple_chargen"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/chargenclient/chargenclient.cc">
+			<Option target="simple_chargenclient"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/daytime/daytime.cc">
+			<Option target="simple_allinone"/>
+			<Option target="simple_daytime"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/daytime/daytime.h">
+			<Option target="simple_allinone"/>
+			<Option target="simple_daytime"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/daytime/main.cc">
+			<Option target="simple_daytime"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/discard/discard.cc">
+			<Option target="simple_allinone"/>
+			<Option target="simple_discard"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/discard/discard.h">
+			<Option target="simple_allinone"/>
+			<Option target="simple_discard"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/discard/main.cc">
+			<Option target="simple_discard"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/echo.cc">
+			<Option target="simple_allinone"/>
+			<Option target="simple_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/echo.h">
+			<Option target="simple_allinone"/>
+			<Option target="simple_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/echo/main.cc">
+			<Option target="simple_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/my_echo_test/my_echo.cpp">
+			<Option target="my_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/my_echo_test/my_echo.h">
+			<Option target="my_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/my_echo_test/my_echo_main.cpp">
+			<Option target="my_echo"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/time/main.cc">
+			<Option target="simple_time"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/time/time.cc">
+			<Option target="simple_allinone"/>
+			<Option target="simple_time"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/time/time.h">
+			<Option target="simple_allinone"/>
+			<Option target="simple_time"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/timeclient/timeclient.cc">
+			<Option target="simple_timeclient"/>
+		</Unit>
+		<Unit filename="/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/simple/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yuanye/WorkSpace/Git/My_Github/muduo/examples/my_test/my_copy_on_write.cpp
+iostream
+-
+string
+-
+unistd.h
+-
+pthread.h
+-
+assert.h
+-
+set
+-
+boost/shared_ptr.hpp
+-
+boost/weak_ptr.hpp
+-
+boost/enable_shared_from_this.hpp
+-
+

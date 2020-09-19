@@ -243,6 +243,36 @@ my_socket_close_shutdown_server/fast:
 .PHONY : my_socket_close_shutdown_server/fast
 
 # Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+
+# Convenience name for target.
+my_socket_mutil_thread_server01: examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+
+.PHONY : my_socket_mutil_thread_server01
+
+# fast build rule for target.
+my_socket_mutil_thread_server01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
+.PHONY : my_socket_mutil_thread_server01/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+
+# Convenience name for target.
+my_socket_local_udpclient: examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+
+.PHONY : my_socket_local_udpclient
+
+# fast build rule for target.
+my_socket_local_udpclient/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
+.PHONY : my_socket_local_udpclient/fast
+
+# Convenience name for target.
 examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule
 .PHONY : examples/my_test/CMakeFiles/my_socket_local_udpserver.dir/rule
@@ -271,21 +301,6 @@ my_socket_tcp_exception_server01: examples/my_test/CMakeFiles/my_socket_tcp_exce
 my_socket_tcp_exception_server01/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build
 .PHONY : my_socket_tcp_exception_server01/fast
-
-# Convenience name for target.
-examples/my_test/CMakeFiles/my_socket_test01.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_test01.dir/rule
-.PHONY : examples/my_test/CMakeFiles/my_socket_test01.dir/rule
-
-# Convenience name for target.
-my_socket_test01: examples/my_test/CMakeFiles/my_socket_test01.dir/rule
-
-.PHONY : my_socket_test01
-
-# fast build rule for target.
-my_socket_test01/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
-.PHONY : my_socket_test01/fast
 
 # Convenience name for target.
 examples/my_test/CMakeFiles/my_socket_client_tcp.dir/rule:
@@ -406,6 +421,21 @@ my_socket_tcp_stream_server: examples/my_test/CMakeFiles/my_socket_tcp_stream_se
 my_socket_tcp_stream_server/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build
 .PHONY : my_socket_tcp_stream_server/fast
+
+# Convenience name for target.
+examples/my_test/CMakeFiles/my_socket_test01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+
+# Convenience name for target.
+my_socket_test01: examples/my_test/CMakeFiles/my_socket_test01.dir/rule
+
+.PHONY : my_socket_test01
+
+# fast build rule for target.
+my_socket_test01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
+.PHONY : my_socket_test01/fast
 
 # Convenience name for target.
 examples/my_test/CMakeFiles/my_tcp_keep_alive_server.dir/rule:
@@ -543,6 +573,21 @@ my_socket_tcp_server_address_in_use/fast:
 .PHONY : my_socket_tcp_server_address_in_use/fast
 
 # Convenience name for target.
+examples/my_test/CMakeFiles/my_copy_on_write.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_copy_on_write.dir/rule
+.PHONY : examples/my_test/CMakeFiles/my_copy_on_write.dir/rule
+
+# Convenience name for target.
+my_copy_on_write: examples/my_test/CMakeFiles/my_copy_on_write.dir/rule
+
+.PHONY : my_copy_on_write
+
+# fast build rule for target.
+my_copy_on_write/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_copy_on_write.dir/build.make examples/my_test/CMakeFiles/my_copy_on_write.dir/build
+.PHONY : my_copy_on_write/fast
+
+# Convenience name for target.
 examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule
 .PHONY : examples/my_test/CMakeFiles/my_socket_udp_connect_client0.dir/rule
@@ -633,6 +678,21 @@ my_socket_tcp_stream_client/fast:
 .PHONY : my_socket_tcp_stream_client/fast
 
 # Convenience name for target.
+examples/my_test/CMakeFiles/algorithm_test.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/algorithm_test.dir/rule
+.PHONY : examples/my_test/CMakeFiles/algorithm_test.dir/rule
+
+# Convenience name for target.
+algorithm_test: examples/my_test/CMakeFiles/algorithm_test.dir/rule
+
+.PHONY : algorithm_test
+
+# fast build rule for target.
+algorithm_test/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/algorithm_test.dir/build.make examples/my_test/CMakeFiles/algorithm_test.dir/build
+.PHONY : algorithm_test/fast
+
+# Convenience name for target.
 examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule
 .PHONY : examples/my_test/CMakeFiles/my_socket_homework_client.dir/rule
@@ -692,35 +752,32 @@ my_socket_poll_client/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_poll_client.dir/build.make examples/my_test/CMakeFiles/my_socket_poll_client.dir/build
 .PHONY : my_socket_poll_client/fast
 
-# Convenience name for target.
-examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
-.PHONY : examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+algorithm_test.o: algorithm_test.cpp.o
 
-# Convenience name for target.
-my_socket_local_udpclient: examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/rule
+.PHONY : algorithm_test.o
 
-.PHONY : my_socket_local_udpclient
+# target to build an object file
+algorithm_test.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/algorithm_test.dir/build.make examples/my_test/CMakeFiles/algorithm_test.dir/algorithm_test.cpp.o
+.PHONY : algorithm_test.cpp.o
 
-# fast build rule for target.
-my_socket_local_udpclient/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
-.PHONY : my_socket_local_udpclient/fast
+algorithm_test.i: algorithm_test.cpp.i
 
-# Convenience name for target.
-examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
-.PHONY : examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+.PHONY : algorithm_test.i
 
-# Convenience name for target.
-my_socket_mutil_thread_server01: examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/rule
+# target to preprocess a source file
+algorithm_test.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/algorithm_test.dir/build.make examples/my_test/CMakeFiles/algorithm_test.dir/algorithm_test.cpp.i
+.PHONY : algorithm_test.cpp.i
 
-.PHONY : my_socket_mutil_thread_server01
+algorithm_test.s: algorithm_test.cpp.s
 
-# fast build rule for target.
-my_socket_mutil_thread_server01/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
-.PHONY : my_socket_mutil_thread_server01/fast
+.PHONY : algorithm_test.s
+
+# target to generate assembly for a file
+algorithm_test.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/algorithm_test.dir/build.make examples/my_test/CMakeFiles/algorithm_test.dir/algorithm_test.cpp.s
+.PHONY : algorithm_test.cpp.s
 
 lib/acceptor.o: lib/acceptor.c.o
 
@@ -1261,6 +1318,33 @@ my_common_test.s: my_common_test.cpp.s
 my_common_test.cpp.s:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_common_test.dir/build.make examples/my_test/CMakeFiles/my_common_test.dir/my_common_test.cpp.s
 .PHONY : my_common_test.cpp.s
+
+my_copy_on_write.o: my_copy_on_write.cpp.o
+
+.PHONY : my_copy_on_write.o
+
+# target to build an object file
+my_copy_on_write.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_copy_on_write.dir/build.make examples/my_test/CMakeFiles/my_copy_on_write.dir/my_copy_on_write.cpp.o
+.PHONY : my_copy_on_write.cpp.o
+
+my_copy_on_write.i: my_copy_on_write.cpp.i
+
+.PHONY : my_copy_on_write.i
+
+# target to preprocess a source file
+my_copy_on_write.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_copy_on_write.dir/build.make examples/my_test/CMakeFiles/my_copy_on_write.dir/my_copy_on_write.cpp.i
+.PHONY : my_copy_on_write.cpp.i
+
+my_copy_on_write.s: my_copy_on_write.cpp.s
+
+.PHONY : my_copy_on_write.s
+
+# target to generate assembly for a file
+my_copy_on_write.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/my_test/CMakeFiles/my_copy_on_write.dir/build.make examples/my_test/CMakeFiles/my_copy_on_write.dir/my_copy_on_write.cpp.s
+.PHONY : my_copy_on_write.cpp.s
 
 my_function_test.o: my_function_test.cpp.o
 
@@ -2199,9 +2283,10 @@ help:
 	@echo "... my_tcp_keep_alive_client"
 	@echo "... my_socket_udp_connect_client"
 	@echo "... my_socket_close_shutdown_server"
+	@echo "... my_socket_mutil_thread_server01"
+	@echo "... my_socket_local_udpclient"
 	@echo "... my_socket_local_udpserver"
 	@echo "... my_socket_tcp_exception_server01"
-	@echo "... my_socket_test01"
 	@echo "... my_socket_client_tcp"
 	@echo "... my_socket_batchwrite_client"
 	@echo "... my_socket_select_client"
@@ -2211,6 +2296,7 @@ help:
 	@echo "... my_socket_local_tcpclient"
 	@echo "... my_socket_client_udp"
 	@echo "... my_socket_tcp_stream_server"
+	@echo "... my_socket_test01"
 	@echo "... my_tcp_keep_alive_server"
 	@echo "... my_socket_server_udp"
 	@echo "... my_socket_server_tcp"
@@ -2220,6 +2306,7 @@ help:
 	@echo "... my_socket_reactor_server"
 	@echo "... my_common_test"
 	@echo "... my_socket_tcp_server_address_in_use"
+	@echo "... my_copy_on_write"
 	@echo "... my_socket_udp_connect_client0"
 	@echo "... my_socket_tcp_exception_client01"
 	@echo "... my_socket_local_tcpserver"
@@ -2227,12 +2314,14 @@ help:
 	@echo "... my_socket_multi_process_server"
 	@echo "... my_socket_tcp_stream_client"
 	@echo "... list_install_components"
+	@echo "... algorithm_test"
 	@echo "... my_socket_homework_client"
 	@echo "... my_socket_select_server"
 	@echo "... my_socket_poll_server"
 	@echo "... my_socket_poll_client"
-	@echo "... my_socket_local_udpclient"
-	@echo "... my_socket_mutil_thread_server01"
+	@echo "... algorithm_test.o"
+	@echo "... algorithm_test.i"
+	@echo "... algorithm_test.s"
 	@echo "... lib/acceptor.o"
 	@echo "... lib/acceptor.i"
 	@echo "... lib/acceptor.s"
@@ -2293,6 +2382,9 @@ help:
 	@echo "... my_common_test.o"
 	@echo "... my_common_test.i"
 	@echo "... my_common_test.s"
+	@echo "... my_copy_on_write.o"
+	@echo "... my_copy_on_write.i"
+	@echo "... my_copy_on_write.s"
 	@echo "... my_function_test.o"
 	@echo "... my_function_test.i"
 	@echo "... my_function_test.s"

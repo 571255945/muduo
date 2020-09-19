@@ -54,6 +54,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/matrix_test.dir/DependInfo.cmake"
   "CMakeFiles/test_racecondition.dir/DependInfo.cmake"
+  "CMakeFiles/signaltest.dir/DependInfo.cmake"
   "CMakeFiles/objectpool.dir/DependInfo.cmake"
   )

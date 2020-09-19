@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -68,16 +80,16 @@ install/fast: preinstall/fast
 	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : edit_cache/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -91,6 +103,16 @@ install/local/fast: preinstall/fast
 	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -102,38 +124,16 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,64 +168,64 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_chargenclient.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_chargenclient.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_chargenclient.dir/rule
+examples/simple/CMakeFiles/simple_echo.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_echo.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_echo.dir/rule
 
 # Convenience name for target.
-simple_chargenclient: examples/simple/CMakeFiles/simple_chargenclient.dir/rule
+simple_echo: examples/simple/CMakeFiles/simple_echo.dir/rule
 
-.PHONY : simple_chargenclient
+.PHONY : simple_echo
 
 # fast build rule for target.
-simple_chargenclient/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_chargenclient.dir/build.make examples/simple/CMakeFiles/simple_chargenclient.dir/build
-.PHONY : simple_chargenclient/fast
+simple_echo/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/build
+.PHONY : simple_echo/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_timeclient.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_timeclient.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_timeclient.dir/rule
+examples/simple/CMakeFiles/my_echo.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/my_echo.dir/rule
+.PHONY : examples/simple/CMakeFiles/my_echo.dir/rule
 
 # Convenience name for target.
-simple_timeclient: examples/simple/CMakeFiles/simple_timeclient.dir/rule
+my_echo: examples/simple/CMakeFiles/my_echo.dir/rule
 
-.PHONY : simple_timeclient
+.PHONY : my_echo
 
 # fast build rule for target.
-simple_timeclient/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_timeclient.dir/build.make examples/simple/CMakeFiles/simple_timeclient.dir/build
-.PHONY : simple_timeclient/fast
+my_echo/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/build
+.PHONY : my_echo/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_allinone.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_allinone.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_allinone.dir/rule
+examples/simple/CMakeFiles/simple_eventloop01.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_eventloop01.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_eventloop01.dir/rule
 
 # Convenience name for target.
-simple_allinone: examples/simple/CMakeFiles/simple_allinone.dir/rule
+simple_eventloop01: examples/simple/CMakeFiles/simple_eventloop01.dir/rule
 
-.PHONY : simple_allinone
+.PHONY : simple_eventloop01
 
 # fast build rule for target.
-simple_allinone/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/build
-.PHONY : simple_allinone/fast
+simple_eventloop01/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/build
+.PHONY : simple_eventloop01/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_daytime.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_daytime.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_daytime.dir/rule
+examples/simple/CMakeFiles/simple_time.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_time.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_time.dir/rule
 
 # Convenience name for target.
-simple_daytime: examples/simple/CMakeFiles/simple_daytime.dir/rule
+simple_time: examples/simple/CMakeFiles/simple_time.dir/rule
 
-.PHONY : simple_daytime
+.PHONY : simple_time
 
 # fast build rule for target.
-simple_daytime/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/build
-.PHONY : simple_daytime/fast
+simple_time/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/build
+.PHONY : simple_time/fast
 
 # Convenience name for target.
 examples/simple/CMakeFiles/simple_chargen.dir/rule:
@@ -258,49 +258,94 @@ simple_discard/fast:
 .PHONY : simple_discard/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_time.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_time.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_time.dir/rule
+examples/simple/CMakeFiles/simple_daytime.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_daytime.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_daytime.dir/rule
 
 # Convenience name for target.
-simple_time: examples/simple/CMakeFiles/simple_time.dir/rule
+simple_daytime: examples/simple/CMakeFiles/simple_daytime.dir/rule
 
-.PHONY : simple_time
+.PHONY : simple_daytime
 
 # fast build rule for target.
-simple_time/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/build
-.PHONY : simple_time/fast
+simple_daytime/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/build
+.PHONY : simple_daytime/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/my_echo.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/my_echo.dir/rule
-.PHONY : examples/simple/CMakeFiles/my_echo.dir/rule
+examples/simple/CMakeFiles/simple_allinone.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_allinone.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_allinone.dir/rule
 
 # Convenience name for target.
-my_echo: examples/simple/CMakeFiles/my_echo.dir/rule
+simple_allinone: examples/simple/CMakeFiles/simple_allinone.dir/rule
 
-.PHONY : my_echo
+.PHONY : simple_allinone
 
 # fast build rule for target.
-my_echo/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/build
-.PHONY : my_echo/fast
+simple_allinone/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/build
+.PHONY : simple_allinone/fast
 
 # Convenience name for target.
-examples/simple/CMakeFiles/simple_echo.dir/rule:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_echo.dir/rule
-.PHONY : examples/simple/CMakeFiles/simple_echo.dir/rule
+examples/simple/CMakeFiles/simple_eventloop03.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_eventloop03.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_eventloop03.dir/rule
 
 # Convenience name for target.
-simple_echo: examples/simple/CMakeFiles/simple_echo.dir/rule
+simple_eventloop03: examples/simple/CMakeFiles/simple_eventloop03.dir/rule
 
-.PHONY : simple_echo
+.PHONY : simple_eventloop03
 
 # fast build rule for target.
-simple_echo/fast:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/build
-.PHONY : simple_echo/fast
+simple_eventloop03/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/build
+.PHONY : simple_eventloop03/fast
+
+# Convenience name for target.
+examples/simple/CMakeFiles/simple_timeclient.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_timeclient.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_timeclient.dir/rule
+
+# Convenience name for target.
+simple_timeclient: examples/simple/CMakeFiles/simple_timeclient.dir/rule
+
+.PHONY : simple_timeclient
+
+# fast build rule for target.
+simple_timeclient/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_timeclient.dir/build.make examples/simple/CMakeFiles/simple_timeclient.dir/build
+.PHONY : simple_timeclient/fast
+
+# Convenience name for target.
+examples/simple/CMakeFiles/simple_chargenclient.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_chargenclient.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_chargenclient.dir/rule
+
+# Convenience name for target.
+simple_chargenclient: examples/simple/CMakeFiles/simple_chargenclient.dir/rule
+
+.PHONY : simple_chargenclient
+
+# fast build rule for target.
+simple_chargenclient/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_chargenclient.dir/build.make examples/simple/CMakeFiles/simple_chargenclient.dir/build
+.PHONY : simple_chargenclient/fast
+
+# Convenience name for target.
+examples/simple/CMakeFiles/simple_eventloop02.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_eventloop02.dir/rule
+.PHONY : examples/simple/CMakeFiles/simple_eventloop02.dir/rule
+
+# Convenience name for target.
+simple_eventloop02: examples/simple/CMakeFiles/simple_eventloop02.dir/rule
+
+.PHONY : simple_eventloop02
+
+# fast build rule for target.
+simple_eventloop02/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/build
+.PHONY : simple_eventloop02/fast
 
 __/muduo_test/test.o: __/muduo_test/test.cpp.o
 
@@ -362,8 +407,8 @@ chargen/chargen.o: chargen/chargen.cc.o
 
 # target to build an object file
 chargen/chargen.cc.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.o
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_chargen.dir/build.make examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.o
 .PHONY : chargen/chargen.cc.o
 
 chargen/chargen.i: chargen/chargen.cc.i
@@ -372,8 +417,8 @@ chargen/chargen.i: chargen/chargen.cc.i
 
 # target to preprocess a source file
 chargen/chargen.cc.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.i
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_chargen.dir/build.make examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.i
 .PHONY : chargen/chargen.cc.i
 
 chargen/chargen.s: chargen/chargen.cc.s
@@ -382,8 +427,8 @@ chargen/chargen.s: chargen/chargen.cc.s
 
 # target to generate assembly for a file
 chargen/chargen.cc.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.s
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_chargen.dir/build.make examples/simple/CMakeFiles/simple_chargen.dir/chargen/chargen.cc.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/chargen/chargen.cc.s
 .PHONY : chargen/chargen.cc.s
 
 chargen/main.o: chargen/main.cc.o
@@ -446,8 +491,8 @@ daytime/daytime.o: daytime/daytime.cc.o
 
 # target to build an object file
 daytime/daytime.cc.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.o
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/daytime/daytime.cc.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.o
 .PHONY : daytime/daytime.cc.o
 
 daytime/daytime.i: daytime/daytime.cc.i
@@ -456,8 +501,8 @@ daytime/daytime.i: daytime/daytime.cc.i
 
 # target to preprocess a source file
 daytime/daytime.cc.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.i
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/daytime/daytime.cc.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.i
 .PHONY : daytime/daytime.cc.i
 
 daytime/daytime.s: daytime/daytime.cc.s
@@ -466,8 +511,8 @@ daytime/daytime.s: daytime/daytime.cc.s
 
 # target to generate assembly for a file
 daytime/daytime.cc.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.s
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/daytime/daytime.cc.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/daytime/daytime.cc.s
 .PHONY : daytime/daytime.cc.s
 
 daytime/main.o: daytime/main.cc.o
@@ -503,8 +548,8 @@ discard/discard.o: discard/discard.cc.o
 
 # target to build an object file
 discard/discard.cc.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.o
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_discard.dir/build.make examples/simple/CMakeFiles/simple_discard.dir/discard/discard.cc.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.o
 .PHONY : discard/discard.cc.o
 
 discard/discard.i: discard/discard.cc.i
@@ -513,8 +558,8 @@ discard/discard.i: discard/discard.cc.i
 
 # target to preprocess a source file
 discard/discard.cc.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.i
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_discard.dir/build.make examples/simple/CMakeFiles/simple_discard.dir/discard/discard.cc.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.i
 .PHONY : discard/discard.cc.i
 
 discard/discard.s: discard/discard.cc.s
@@ -523,8 +568,8 @@ discard/discard.s: discard/discard.cc.s
 
 # target to generate assembly for a file
 discard/discard.cc.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.s
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_discard.dir/build.make examples/simple/CMakeFiles/simple_discard.dir/discard/discard.cc.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/discard/discard.cc.s
 .PHONY : discard/discard.cc.s
 
 discard/main.o: discard/main.cc.o
@@ -560,8 +605,8 @@ echo/echo.o: echo/echo.cc.o
 
 # target to build an object file
 echo/echo.cc.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.o
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/echo/echo.cc.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.o
 .PHONY : echo/echo.cc.o
 
 echo/echo.i: echo/echo.cc.i
@@ -570,8 +615,8 @@ echo/echo.i: echo/echo.cc.i
 
 # target to preprocess a source file
 echo/echo.cc.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.i
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/echo/echo.cc.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.i
 .PHONY : echo/echo.cc.i
 
 echo/echo.s: echo/echo.cc.s
@@ -580,8 +625,8 @@ echo/echo.s: echo/echo.cc.s
 
 # target to generate assembly for a file
 echo/echo.cc.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.s
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/echo/echo.cc.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/echo/echo.cc.s
 .PHONY : echo/echo.cc.s
 
 echo/main.o: echo/main.cc.o
@@ -610,6 +655,357 @@ echo/main.s: echo/main.cc.s
 echo/main.cc.s:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/echo/main.cc.s
 .PHONY : echo/main.cc.s
+
+eventloop01/eventloop01.o: eventloop01/eventloop01.cpp.o
+
+.PHONY : eventloop01/eventloop01.o
+
+# target to build an object file
+eventloop01/eventloop01.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/eventloop01.cpp.o
+.PHONY : eventloop01/eventloop01.cpp.o
+
+eventloop01/eventloop01.i: eventloop01/eventloop01.cpp.i
+
+.PHONY : eventloop01/eventloop01.i
+
+# target to preprocess a source file
+eventloop01/eventloop01.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/eventloop01.cpp.i
+.PHONY : eventloop01/eventloop01.cpp.i
+
+eventloop01/eventloop01.s: eventloop01/eventloop01.cpp.s
+
+.PHONY : eventloop01/eventloop01.s
+
+# target to generate assembly for a file
+eventloop01/eventloop01.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/eventloop01.cpp.s
+.PHONY : eventloop01/eventloop01.cpp.s
+
+eventloop01/test.o: eventloop01/test.cpp.o
+
+.PHONY : eventloop01/test.o
+
+# target to build an object file
+eventloop01/test.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/test.cpp.o
+.PHONY : eventloop01/test.cpp.o
+
+eventloop01/test.i: eventloop01/test.cpp.i
+
+.PHONY : eventloop01/test.i
+
+# target to preprocess a source file
+eventloop01/test.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/test.cpp.i
+.PHONY : eventloop01/test.cpp.i
+
+eventloop01/test.s: eventloop01/test.cpp.s
+
+.PHONY : eventloop01/test.s
+
+# target to generate assembly for a file
+eventloop01/test.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/eventloop01/test.cpp.s
+.PHONY : eventloop01/test.cpp.s
+
+eventloop02/Channel.o: eventloop02/Channel.cc.o
+
+.PHONY : eventloop02/Channel.o
+
+# target to build an object file
+eventloop02/Channel.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Channel.cc.o
+.PHONY : eventloop02/Channel.cc.o
+
+eventloop02/Channel.i: eventloop02/Channel.cc.i
+
+.PHONY : eventloop02/Channel.i
+
+# target to preprocess a source file
+eventloop02/Channel.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Channel.cc.i
+.PHONY : eventloop02/Channel.cc.i
+
+eventloop02/Channel.s: eventloop02/Channel.cc.s
+
+.PHONY : eventloop02/Channel.s
+
+# target to generate assembly for a file
+eventloop02/Channel.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Channel.cc.s
+.PHONY : eventloop02/Channel.cc.s
+
+eventloop02/EventLoop.o: eventloop02/EventLoop.cc.o
+
+.PHONY : eventloop02/EventLoop.o
+
+# target to build an object file
+eventloop02/EventLoop.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/EventLoop.cc.o
+.PHONY : eventloop02/EventLoop.cc.o
+
+eventloop02/EventLoop.i: eventloop02/EventLoop.cc.i
+
+.PHONY : eventloop02/EventLoop.i
+
+# target to preprocess a source file
+eventloop02/EventLoop.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/EventLoop.cc.i
+.PHONY : eventloop02/EventLoop.cc.i
+
+eventloop02/EventLoop.s: eventloop02/EventLoop.cc.s
+
+.PHONY : eventloop02/EventLoop.s
+
+# target to generate assembly for a file
+eventloop02/EventLoop.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/EventLoop.cc.s
+.PHONY : eventloop02/EventLoop.cc.s
+
+eventloop02/Poller.o: eventloop02/Poller.cc.o
+
+.PHONY : eventloop02/Poller.o
+
+# target to build an object file
+eventloop02/Poller.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Poller.cc.o
+.PHONY : eventloop02/Poller.cc.o
+
+eventloop02/Poller.i: eventloop02/Poller.cc.i
+
+.PHONY : eventloop02/Poller.i
+
+# target to preprocess a source file
+eventloop02/Poller.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Poller.cc.i
+.PHONY : eventloop02/Poller.cc.i
+
+eventloop02/Poller.s: eventloop02/Poller.cc.s
+
+.PHONY : eventloop02/Poller.s
+
+# target to generate assembly for a file
+eventloop02/Poller.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/Poller.cc.s
+.PHONY : eventloop02/Poller.cc.s
+
+eventloop02/main.o: eventloop02/main.cpp.o
+
+.PHONY : eventloop02/main.o
+
+# target to build an object file
+eventloop02/main.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/main.cpp.o
+.PHONY : eventloop02/main.cpp.o
+
+eventloop02/main.i: eventloop02/main.cpp.i
+
+.PHONY : eventloop02/main.i
+
+# target to preprocess a source file
+eventloop02/main.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/main.cpp.i
+.PHONY : eventloop02/main.cpp.i
+
+eventloop02/main.s: eventloop02/main.cpp.s
+
+.PHONY : eventloop02/main.s
+
+# target to generate assembly for a file
+eventloop02/main.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/eventloop02/main.cpp.s
+.PHONY : eventloop02/main.cpp.s
+
+eventloop03/Channel.o: eventloop03/Channel.cc.o
+
+.PHONY : eventloop03/Channel.o
+
+# target to build an object file
+eventloop03/Channel.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Channel.cc.o
+.PHONY : eventloop03/Channel.cc.o
+
+eventloop03/Channel.i: eventloop03/Channel.cc.i
+
+.PHONY : eventloop03/Channel.i
+
+# target to preprocess a source file
+eventloop03/Channel.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Channel.cc.i
+.PHONY : eventloop03/Channel.cc.i
+
+eventloop03/Channel.s: eventloop03/Channel.cc.s
+
+.PHONY : eventloop03/Channel.s
+
+# target to generate assembly for a file
+eventloop03/Channel.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Channel.cc.s
+.PHONY : eventloop03/Channel.cc.s
+
+eventloop03/EventLoop.o: eventloop03/EventLoop.cc.o
+
+.PHONY : eventloop03/EventLoop.o
+
+# target to build an object file
+eventloop03/EventLoop.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoop.cc.o
+.PHONY : eventloop03/EventLoop.cc.o
+
+eventloop03/EventLoop.i: eventloop03/EventLoop.cc.i
+
+.PHONY : eventloop03/EventLoop.i
+
+# target to preprocess a source file
+eventloop03/EventLoop.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoop.cc.i
+.PHONY : eventloop03/EventLoop.cc.i
+
+eventloop03/EventLoop.s: eventloop03/EventLoop.cc.s
+
+.PHONY : eventloop03/EventLoop.s
+
+# target to generate assembly for a file
+eventloop03/EventLoop.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoop.cc.s
+.PHONY : eventloop03/EventLoop.cc.s
+
+eventloop03/EventLoopThread.o: eventloop03/EventLoopThread.cc.o
+
+.PHONY : eventloop03/EventLoopThread.o
+
+# target to build an object file
+eventloop03/EventLoopThread.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoopThread.cc.o
+.PHONY : eventloop03/EventLoopThread.cc.o
+
+eventloop03/EventLoopThread.i: eventloop03/EventLoopThread.cc.i
+
+.PHONY : eventloop03/EventLoopThread.i
+
+# target to preprocess a source file
+eventloop03/EventLoopThread.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoopThread.cc.i
+.PHONY : eventloop03/EventLoopThread.cc.i
+
+eventloop03/EventLoopThread.s: eventloop03/EventLoopThread.cc.s
+
+.PHONY : eventloop03/EventLoopThread.s
+
+# target to generate assembly for a file
+eventloop03/EventLoopThread.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/EventLoopThread.cc.s
+.PHONY : eventloop03/EventLoopThread.cc.s
+
+eventloop03/Poller.o: eventloop03/Poller.cc.o
+
+.PHONY : eventloop03/Poller.o
+
+# target to build an object file
+eventloop03/Poller.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Poller.cc.o
+.PHONY : eventloop03/Poller.cc.o
+
+eventloop03/Poller.i: eventloop03/Poller.cc.i
+
+.PHONY : eventloop03/Poller.i
+
+# target to preprocess a source file
+eventloop03/Poller.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Poller.cc.i
+.PHONY : eventloop03/Poller.cc.i
+
+eventloop03/Poller.s: eventloop03/Poller.cc.s
+
+.PHONY : eventloop03/Poller.s
+
+# target to generate assembly for a file
+eventloop03/Poller.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Poller.cc.s
+.PHONY : eventloop03/Poller.cc.s
+
+eventloop03/Timer.o: eventloop03/Timer.cc.o
+
+.PHONY : eventloop03/Timer.o
+
+# target to build an object file
+eventloop03/Timer.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Timer.cc.o
+.PHONY : eventloop03/Timer.cc.o
+
+eventloop03/Timer.i: eventloop03/Timer.cc.i
+
+.PHONY : eventloop03/Timer.i
+
+# target to preprocess a source file
+eventloop03/Timer.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Timer.cc.i
+.PHONY : eventloop03/Timer.cc.i
+
+eventloop03/Timer.s: eventloop03/Timer.cc.s
+
+.PHONY : eventloop03/Timer.s
+
+# target to generate assembly for a file
+eventloop03/Timer.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/Timer.cc.s
+.PHONY : eventloop03/Timer.cc.s
+
+eventloop03/TimerQueue.o: eventloop03/TimerQueue.cc.o
+
+.PHONY : eventloop03/TimerQueue.o
+
+# target to build an object file
+eventloop03/TimerQueue.cc.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/TimerQueue.cc.o
+.PHONY : eventloop03/TimerQueue.cc.o
+
+eventloop03/TimerQueue.i: eventloop03/TimerQueue.cc.i
+
+.PHONY : eventloop03/TimerQueue.i
+
+# target to preprocess a source file
+eventloop03/TimerQueue.cc.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/TimerQueue.cc.i
+.PHONY : eventloop03/TimerQueue.cc.i
+
+eventloop03/TimerQueue.s: eventloop03/TimerQueue.cc.s
+
+.PHONY : eventloop03/TimerQueue.s
+
+# target to generate assembly for a file
+eventloop03/TimerQueue.cc.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/TimerQueue.cc.s
+.PHONY : eventloop03/TimerQueue.cc.s
+
+eventloop03/main.o: eventloop03/main.cpp.o
+
+.PHONY : eventloop03/main.o
+
+# target to build an object file
+eventloop03/main.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/main.cpp.o
+.PHONY : eventloop03/main.cpp.o
+
+eventloop03/main.i: eventloop03/main.cpp.i
+
+.PHONY : eventloop03/main.i
+
+# target to preprocess a source file
+eventloop03/main.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/main.cpp.i
+.PHONY : eventloop03/main.cpp.i
+
+eventloop03/main.s: eventloop03/main.cpp.s
+
+.PHONY : eventloop03/main.s
+
+# target to generate assembly for a file
+eventloop03/main.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/eventloop03/main.cpp.s
+.PHONY : eventloop03/main.cpp.s
 
 my_echo_test/my_echo.o: my_echo_test/my_echo.cpp.o
 
@@ -698,8 +1094,8 @@ time/time.o: time/time.cc.o
 
 # target to build an object file
 time/time.cc.o:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.o
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/time/time.cc.o
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.o
 .PHONY : time/time.cc.o
 
 time/time.i: time/time.cc.i
@@ -708,8 +1104,8 @@ time/time.i: time/time.cc.i
 
 # target to preprocess a source file
 time/time.cc.i:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.i
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/time/time.cc.i
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.i
 .PHONY : time/time.cc.i
 
 time/time.s: time/time.cc.s
@@ -718,8 +1114,8 @@ time/time.s: time/time.cc.s
 
 # target to generate assembly for a file
 time/time.cc.s:
-	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.s
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/time/time.cc.s
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/time/time.cc.s
 .PHONY : time/time.cc.s
 
 timeclient/timeclient.o: timeclient/timeclient.cc.o
@@ -755,22 +1151,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install"
-	@echo "... edit_cache"
-	@echo "... install/local"
-	@echo "... test"
-	@echo "... simple_chargenclient"
 	@echo "... install/strip"
-	@echo "... simple_timeclient"
-	@echo "... simple_allinone"
-	@echo "... simple_daytime"
-	@echo "... list_install_components"
-	@echo "... simple_chargen"
-	@echo "... simple_discard"
-	@echo "... simple_time"
-	@echo "... my_echo"
-	@echo "... rebuild_cache"
+	@echo "... install"
 	@echo "... simple_echo"
+	@echo "... rebuild_cache"
+	@echo "... install/local"
+	@echo "... my_echo"
+	@echo "... simple_eventloop01"
+	@echo "... simple_time"
+	@echo "... simple_chargen"
+	@echo "... list_install_components"
+	@echo "... simple_discard"
+	@echo "... simple_daytime"
+	@echo "... simple_allinone"
+	@echo "... simple_eventloop03"
+	@echo "... simple_timeclient"
+	@echo "... simple_chargenclient"
+	@echo "... simple_eventloop02"
+	@echo "... test"
+	@echo "... edit_cache"
 	@echo "... __/muduo_test/test.o"
 	@echo "... __/muduo_test/test.i"
 	@echo "... __/muduo_test/test.s"
@@ -804,6 +1203,45 @@ help:
 	@echo "... echo/main.o"
 	@echo "... echo/main.i"
 	@echo "... echo/main.s"
+	@echo "... eventloop01/eventloop01.o"
+	@echo "... eventloop01/eventloop01.i"
+	@echo "... eventloop01/eventloop01.s"
+	@echo "... eventloop01/test.o"
+	@echo "... eventloop01/test.i"
+	@echo "... eventloop01/test.s"
+	@echo "... eventloop02/Channel.o"
+	@echo "... eventloop02/Channel.i"
+	@echo "... eventloop02/Channel.s"
+	@echo "... eventloop02/EventLoop.o"
+	@echo "... eventloop02/EventLoop.i"
+	@echo "... eventloop02/EventLoop.s"
+	@echo "... eventloop02/Poller.o"
+	@echo "... eventloop02/Poller.i"
+	@echo "... eventloop02/Poller.s"
+	@echo "... eventloop02/main.o"
+	@echo "... eventloop02/main.i"
+	@echo "... eventloop02/main.s"
+	@echo "... eventloop03/Channel.o"
+	@echo "... eventloop03/Channel.i"
+	@echo "... eventloop03/Channel.s"
+	@echo "... eventloop03/EventLoop.o"
+	@echo "... eventloop03/EventLoop.i"
+	@echo "... eventloop03/EventLoop.s"
+	@echo "... eventloop03/EventLoopThread.o"
+	@echo "... eventloop03/EventLoopThread.i"
+	@echo "... eventloop03/EventLoopThread.s"
+	@echo "... eventloop03/Poller.o"
+	@echo "... eventloop03/Poller.i"
+	@echo "... eventloop03/Poller.s"
+	@echo "... eventloop03/Timer.o"
+	@echo "... eventloop03/Timer.i"
+	@echo "... eventloop03/Timer.s"
+	@echo "... eventloop03/TimerQueue.o"
+	@echo "... eventloop03/TimerQueue.i"
+	@echo "... eventloop03/TimerQueue.s"
+	@echo "... eventloop03/main.o"
+	@echo "... eventloop03/main.i"
+	@echo "... eventloop03/main.s"
 	@echo "... my_echo_test/my_echo.o"
 	@echo "... my_echo_test/my_echo.i"
 	@echo "... my_echo_test/my_echo.s"

@@ -1,8 +1,11 @@
+
+#support boost
 find_package(Boost REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 find_library(BOOSTTEST_LIBRARY NAMES boost_unit_test_framework)
 find_library(BOOSTPO_LIBRARY NAMES boost_program_options)
 find_library(BOOSTSYSTEM_LIBRARY NAMES boost_system)
+
 #reactor
 if (EPOLL_EXISTS)
     set(rSRC
@@ -50,6 +53,8 @@ else ()
             my_socket_reactor_server.cpp
             )
 endif ()
+
+add_executable(algorithm_test algorithm_test.cpp)
 
 add_executable(my_socket_reactor_server ${rSRC})
 target_link_libraries(my_socket_reactor_server pthread)
@@ -139,11 +144,13 @@ add_executable(my_socket_multi_process_server my_socket_multi_process_server.cpp
 #multi_thread
 add_executable(my_socket_mutil_thread_server01 my_socket_mutil_thread_server01.cpp)
 add_executable(my_socket_multi_thread_server02 my_socket_multi_thread_server02.cpp)
+add_executable(my_copy_on_write my_copy_on_write.cpp)
 #解决undefined reference to `pthread_create'问题，
 #问题原因 pthread库不是Linux系统默认的库
 #find_package(Threads REQUIRED)
 target_link_libraries(my_socket_mutil_thread_server01 Threads::Threads)
 target_link_libraries(my_socket_multi_thread_server02 Threads::Threads)
+target_link_libraries(my_copy_on_write Threads::Threads)
 
 #reactor
 #set(rSRC

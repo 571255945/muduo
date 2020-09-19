@@ -79,6 +79,8 @@ test_racecondition_EXTERNAL_OBJECTS =
 
 bin/test_racecondition: examples/muduo_test/CMakeFiles/test_racecondition.dir/test.cpp.o
 bin/test_racecondition: examples/muduo_test/CMakeFiles/test_racecondition.dir/build.make
+bin/test_racecondition: lib/libmuduo_net.a
+bin/test_racecondition: lib/libmuduo_base.a
 bin/test_racecondition: examples/muduo_test/CMakeFiles/test_racecondition.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/test_racecondition"
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug/examples/muduo_test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_racecondition.dir/link.txt --verbose=$(VERBOSE)

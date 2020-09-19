@@ -1390,56 +1390,56 @@ shorturl/fast:
 .PHONY : shorturl/fast
 
 #=============================================================================
-# Target rules for targets named simple_chargenclient
+# Target rules for targets named simple_echo
 
 # Build rule for target.
-simple_chargenclient: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_chargenclient
-.PHONY : simple_chargenclient
+simple_echo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_echo
+.PHONY : simple_echo
 
 # fast build rule for target.
-simple_chargenclient/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_chargenclient.dir/build.make examples/simple/CMakeFiles/simple_chargenclient.dir/build
-.PHONY : simple_chargenclient/fast
+simple_echo/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/build
+.PHONY : simple_echo/fast
 
 #=============================================================================
-# Target rules for targets named simple_timeclient
+# Target rules for targets named my_echo
 
 # Build rule for target.
-simple_timeclient: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_timeclient
-.PHONY : simple_timeclient
+my_echo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_echo
+.PHONY : my_echo
 
 # fast build rule for target.
-simple_timeclient/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_timeclient.dir/build.make examples/simple/CMakeFiles/simple_timeclient.dir/build
-.PHONY : simple_timeclient/fast
+my_echo/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/build
+.PHONY : my_echo/fast
 
 #=============================================================================
-# Target rules for targets named simple_allinone
+# Target rules for targets named simple_eventloop01
 
 # Build rule for target.
-simple_allinone: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_allinone
-.PHONY : simple_allinone
+simple_eventloop01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_eventloop01
+.PHONY : simple_eventloop01
 
 # fast build rule for target.
-simple_allinone/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/build
-.PHONY : simple_allinone/fast
+simple_eventloop01/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_eventloop01.dir/build.make examples/simple/CMakeFiles/simple_eventloop01.dir/build
+.PHONY : simple_eventloop01/fast
 
 #=============================================================================
-# Target rules for targets named simple_daytime
+# Target rules for targets named simple_time
 
 # Build rule for target.
-simple_daytime: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_daytime
-.PHONY : simple_daytime
+simple_time: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_time
+.PHONY : simple_time
 
 # fast build rule for target.
-simple_daytime/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/build
-.PHONY : simple_daytime/fast
+simple_time/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/build
+.PHONY : simple_time/fast
 
 #=============================================================================
 # Target rules for targets named simple_chargen
@@ -1468,43 +1468,82 @@ simple_discard/fast:
 .PHONY : simple_discard/fast
 
 #=============================================================================
-# Target rules for targets named simple_time
+# Target rules for targets named simple_daytime
 
 # Build rule for target.
-simple_time: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_time
-.PHONY : simple_time
+simple_daytime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_daytime
+.PHONY : simple_daytime
 
 # fast build rule for target.
-simple_time/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_time.dir/build.make examples/simple/CMakeFiles/simple_time.dir/build
-.PHONY : simple_time/fast
+simple_daytime/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/build
+.PHONY : simple_daytime/fast
 
 #=============================================================================
-# Target rules for targets named my_echo
+# Target rules for targets named simple_allinone
 
 # Build rule for target.
-my_echo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_echo
-.PHONY : my_echo
+simple_allinone: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_allinone
+.PHONY : simple_allinone
 
 # fast build rule for target.
-my_echo/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/my_echo.dir/build.make examples/simple/CMakeFiles/my_echo.dir/build
-.PHONY : my_echo/fast
+simple_allinone/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/build
+.PHONY : simple_allinone/fast
 
 #=============================================================================
-# Target rules for targets named simple_echo
+# Target rules for targets named simple_eventloop03
 
 # Build rule for target.
-simple_echo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_echo
-.PHONY : simple_echo
+simple_eventloop03: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_eventloop03
+.PHONY : simple_eventloop03
 
 # fast build rule for target.
-simple_echo/fast:
-	$(MAKE) -f examples/simple/CMakeFiles/simple_echo.dir/build.make examples/simple/CMakeFiles/simple_echo.dir/build
-.PHONY : simple_echo/fast
+simple_eventloop03/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_eventloop03.dir/build.make examples/simple/CMakeFiles/simple_eventloop03.dir/build
+.PHONY : simple_eventloop03/fast
+
+#=============================================================================
+# Target rules for targets named simple_timeclient
+
+# Build rule for target.
+simple_timeclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_timeclient
+.PHONY : simple_timeclient
+
+# fast build rule for target.
+simple_timeclient/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_timeclient.dir/build.make examples/simple/CMakeFiles/simple_timeclient.dir/build
+.PHONY : simple_timeclient/fast
+
+#=============================================================================
+# Target rules for targets named simple_chargenclient
+
+# Build rule for target.
+simple_chargenclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_chargenclient
+.PHONY : simple_chargenclient
+
+# fast build rule for target.
+simple_chargenclient/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_chargenclient.dir/build.make examples/simple/CMakeFiles/simple_chargenclient.dir/build
+.PHONY : simple_chargenclient/fast
+
+#=============================================================================
+# Target rules for targets named simple_eventloop02
+
+# Build rule for target.
+simple_eventloop02: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simple_eventloop02
+.PHONY : simple_eventloop02
+
+# fast build rule for target.
+simple_eventloop02/fast:
+	$(MAKE) -f examples/simple/CMakeFiles/simple_eventloop02.dir/build.make examples/simple/CMakeFiles/simple_eventloop02.dir/build
+.PHONY : simple_eventloop02/fast
 
 #=============================================================================
 # Target rules for targets named tcprelay
@@ -1871,6 +1910,32 @@ my_socket_close_shutdown_server/fast:
 .PHONY : my_socket_close_shutdown_server/fast
 
 #=============================================================================
+# Target rules for targets named my_socket_mutil_thread_server01
+
+# Build rule for target.
+my_socket_mutil_thread_server01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_mutil_thread_server01
+.PHONY : my_socket_mutil_thread_server01
+
+# fast build rule for target.
+my_socket_mutil_thread_server01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
+.PHONY : my_socket_mutil_thread_server01/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_local_udpclient
+
+# Build rule for target.
+my_socket_local_udpclient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_udpclient
+.PHONY : my_socket_local_udpclient
+
+# fast build rule for target.
+my_socket_local_udpclient/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
+.PHONY : my_socket_local_udpclient/fast
+
+#=============================================================================
 # Target rules for targets named my_socket_local_udpserver
 
 # Build rule for target.
@@ -1895,19 +1960,6 @@ my_socket_tcp_exception_server01: cmake_check_build_system
 my_socket_tcp_exception_server01/fast:
 	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_exception_server01.dir/build
 .PHONY : my_socket_tcp_exception_server01/fast
-
-#=============================================================================
-# Target rules for targets named my_socket_test01
-
-# Build rule for target.
-my_socket_test01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_socket_test01
-.PHONY : my_socket_test01
-
-# fast build rule for target.
-my_socket_test01/fast:
-	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
-.PHONY : my_socket_test01/fast
 
 #=============================================================================
 # Target rules for targets named my_socket_client_tcp
@@ -2012,6 +2064,19 @@ my_socket_tcp_stream_server: cmake_check_build_system
 my_socket_tcp_stream_server/fast:
 	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build.make examples/my_test/CMakeFiles/my_socket_tcp_stream_server.dir/build
 .PHONY : my_socket_tcp_stream_server/fast
+
+#=============================================================================
+# Target rules for targets named my_socket_test01
+
+# Build rule for target.
+my_socket_test01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_socket_test01
+.PHONY : my_socket_test01
+
+# fast build rule for target.
+my_socket_test01/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_test01.dir/build.make examples/my_test/CMakeFiles/my_socket_test01.dir/build
+.PHONY : my_socket_test01/fast
 
 #=============================================================================
 # Target rules for targets named my_tcp_keep_alive_server
@@ -2131,6 +2196,19 @@ my_socket_tcp_server_address_in_use/fast:
 .PHONY : my_socket_tcp_server_address_in_use/fast
 
 #=============================================================================
+# Target rules for targets named my_copy_on_write
+
+# Build rule for target.
+my_copy_on_write: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_copy_on_write
+.PHONY : my_copy_on_write
+
+# fast build rule for target.
+my_copy_on_write/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/my_copy_on_write.dir/build.make examples/my_test/CMakeFiles/my_copy_on_write.dir/build
+.PHONY : my_copy_on_write/fast
+
+#=============================================================================
 # Target rules for targets named my_socket_udp_connect_client0
 
 # Build rule for target.
@@ -2209,6 +2287,19 @@ my_socket_tcp_stream_client/fast:
 .PHONY : my_socket_tcp_stream_client/fast
 
 #=============================================================================
+# Target rules for targets named algorithm_test
+
+# Build rule for target.
+algorithm_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 algorithm_test
+.PHONY : algorithm_test
+
+# fast build rule for target.
+algorithm_test/fast:
+	$(MAKE) -f examples/my_test/CMakeFiles/algorithm_test.dir/build.make examples/my_test/CMakeFiles/algorithm_test.dir/build
+.PHONY : algorithm_test/fast
+
+#=============================================================================
 # Target rules for targets named my_socket_homework_client
 
 # Build rule for target.
@@ -2261,30 +2352,30 @@ my_socket_poll_client/fast:
 .PHONY : my_socket_poll_client/fast
 
 #=============================================================================
-# Target rules for targets named my_socket_local_udpclient
+# Target rules for targets named objectpool
 
 # Build rule for target.
-my_socket_local_udpclient: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_socket_local_udpclient
-.PHONY : my_socket_local_udpclient
+objectpool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 objectpool
+.PHONY : objectpool
 
 # fast build rule for target.
-my_socket_local_udpclient/fast:
-	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build.make examples/my_test/CMakeFiles/my_socket_local_udpclient.dir/build
-.PHONY : my_socket_local_udpclient/fast
+objectpool/fast:
+	$(MAKE) -f examples/muduo_test/CMakeFiles/objectpool.dir/build.make examples/muduo_test/CMakeFiles/objectpool.dir/build
+.PHONY : objectpool/fast
 
 #=============================================================================
-# Target rules for targets named my_socket_mutil_thread_server01
+# Target rules for targets named signaltest
 
 # Build rule for target.
-my_socket_mutil_thread_server01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_socket_mutil_thread_server01
-.PHONY : my_socket_mutil_thread_server01
+signaltest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 signaltest
+.PHONY : signaltest
 
 # fast build rule for target.
-my_socket_mutil_thread_server01/fast:
-	$(MAKE) -f examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build.make examples/my_test/CMakeFiles/my_socket_mutil_thread_server01.dir/build
-.PHONY : my_socket_mutil_thread_server01/fast
+signaltest/fast:
+	$(MAKE) -f examples/muduo_test/CMakeFiles/signaltest.dir/build.make examples/muduo_test/CMakeFiles/signaltest.dir/build
+.PHONY : signaltest/fast
 
 #=============================================================================
 # Target rules for targets named test_racecondition
@@ -2298,6 +2389,19 @@ test_racecondition: cmake_check_build_system
 test_racecondition/fast:
 	$(MAKE) -f examples/muduo_test/CMakeFiles/test_racecondition.dir/build.make examples/muduo_test/CMakeFiles/test_racecondition.dir/build
 .PHONY : test_racecondition/fast
+
+#=============================================================================
+# Target rules for targets named matrix_test
+
+# Build rule for target.
+matrix_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix_test
+.PHONY : matrix_test
+
+# fast build rule for target.
+matrix_test/fast:
+	$(MAKE) -f examples/muduo_test/CMakeFiles/matrix_test.dir/build.make examples/muduo_test/CMakeFiles/matrix_test.dir/build
+.PHONY : matrix_test/fast
 
 #=============================================================================
 # Target rules for targets named cdns
@@ -2822,15 +2926,18 @@ help:
 	@echo "... roundtrip_udp"
 	@echo "... roundtrip"
 	@echo "... shorturl"
-	@echo "... simple_chargenclient"
-	@echo "... simple_timeclient"
-	@echo "... simple_allinone"
-	@echo "... simple_daytime"
+	@echo "... simple_echo"
+	@echo "... my_echo"
+	@echo "... simple_eventloop01"
+	@echo "... simple_time"
 	@echo "... simple_chargen"
 	@echo "... simple_discard"
-	@echo "... simple_time"
-	@echo "... my_echo"
-	@echo "... simple_echo"
+	@echo "... simple_daytime"
+	@echo "... simple_allinone"
+	@echo "... simple_eventloop03"
+	@echo "... simple_timeclient"
+	@echo "... simple_chargenclient"
+	@echo "... simple_eventloop02"
 	@echo "... tcprelay"
 	@echo "... balancer"
 	@echo "... socks4a"
@@ -2859,9 +2966,10 @@ help:
 	@echo "... my_tcp_keep_alive_client"
 	@echo "... my_socket_udp_connect_client"
 	@echo "... my_socket_close_shutdown_server"
+	@echo "... my_socket_mutil_thread_server01"
+	@echo "... my_socket_local_udpclient"
 	@echo "... my_socket_local_udpserver"
 	@echo "... my_socket_tcp_exception_server01"
-	@echo "... my_socket_test01"
 	@echo "... my_socket_client_tcp"
 	@echo "... my_socket_batchwrite_client"
 	@echo "... my_socket_select_client"
@@ -2870,6 +2978,7 @@ help:
 	@echo "... my_socket_local_tcpclient"
 	@echo "... my_socket_client_udp"
 	@echo "... my_socket_tcp_stream_server"
+	@echo "... my_socket_test01"
 	@echo "... my_tcp_keep_alive_server"
 	@echo "... my_socket_server_udp"
 	@echo "... my_socket_server_tcp"
@@ -2879,19 +2988,22 @@ help:
 	@echo "... my_socket_reactor_server"
 	@echo "... my_common_test"
 	@echo "... my_socket_tcp_server_address_in_use"
+	@echo "... my_copy_on_write"
 	@echo "... my_socket_udp_connect_client0"
 	@echo "... my_socket_tcp_exception_client01"
 	@echo "... my_socket_local_tcpserver"
 	@echo "... my_socket_epoll_server"
 	@echo "... my_socket_multi_process_server"
 	@echo "... my_socket_tcp_stream_client"
+	@echo "... algorithm_test"
 	@echo "... my_socket_homework_client"
 	@echo "... my_socket_select_server"
 	@echo "... my_socket_poll_server"
 	@echo "... my_socket_poll_client"
-	@echo "... my_socket_local_udpclient"
-	@echo "... my_socket_mutil_thread_server01"
+	@echo "... objectpool"
+	@echo "... signaltest"
 	@echo "... test_racecondition"
+	@echo "... matrix_test"
 	@echo "... cdns"
 	@echo "... muduo_cdns"
 	@echo "... mcurl"

@@ -2,6 +2,39 @@
 // Created by root on 9/28/19.
 //
 
+
+
+#if 0
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <thread>
+#include <mutex>
+std::recursive_mutex mx_guard;
+
+using namespace std;
+void func()
+{
+    std::lock_guard<std::recursive_mutex> loc(mx_guard);
+    cout<<"mutex : in func"<<endl;
+}
+
+
+int main()
+{
+    {
+        std::lock_guard<std::recursive_mutex> loc(mx_guard);
+        cout<<"mutex : in main func "<<endl;
+        func();
+    }
+
+    cout << "close"<<endl;
+    return 0;
+}
+
+#endif
+
 #if 0
 #include<iostream>
 #include<pthread.h>
@@ -58,8 +91,10 @@ void* worker3(void* arg){
 
 using namespace std;
 
+//(1)(2)两种方式效果一样
+//__thread int var=5;(1)
 const int i=5;
-__thread int var=i;//两种方式效果一样
+__thread int var=i;//(2)
 
 static __thread int var2 = 15;//
 
@@ -115,23 +150,58 @@ static void* worker2(void* arg){
 //在线程中地址都不一样，__thread变量每一个线程有一份独立实体，各个线程的值互不干扰。
 #endif
 
-#if 1
+#if 0
 #include <thread>
 #include <iostream>
+
+#include <unistd.h>
 using namespace std;
 
 void fun1(int n)
 {
     cout<<"func1"<<endl;
 }
+void fun2(int n)
+{
+    for(int i=0;i<100;i++)
+    {
+        cout<<"++++++++++++++func2"<<endl;
+        sleep(1);
+    }
+}
+
+void fun3(int n)
+{
+    for(int i=0;i<100;i++)
+    {
+        cout<<"-------------func3"<<endl;
+        sleep(1);
+    }
+}
+
+
 
 int main()
 {
-    cout<<"124"<<endl;
-    std::thread t1(fun1,3);
-    std::thread t2()
+    std::thread t1(fun1,1);
     t1.join();
+    {
+        std::thread t2(fun2,2);
+        t2.detach();
+    }
+
+    std::thread *t3 = new thread(fun3,3);
+    t3->detach();
+    delete t3;
+
+    while(1)
+    {
+        cout<<"backgroud"<<endl;
+        sleep(3);
+    }
     return 0;
 }
+
+
 
 #endif

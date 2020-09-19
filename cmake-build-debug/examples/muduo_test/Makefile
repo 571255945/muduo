@@ -68,6 +68,50 @@ install/strip/fast: preinstall/fast
 	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -90,50 +134,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/yuanye/Downloads/clion-2019-1-4/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+examples/muduo_test/CMakeFiles/objectpool.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/muduo_test/CMakeFiles/objectpool.dir/rule
+.PHONY : examples/muduo_test/CMakeFiles/objectpool.dir/rule
+
+# Convenience name for target.
+objectpool: examples/muduo_test/CMakeFiles/objectpool.dir/rule
+
+.PHONY : objectpool
+
+# fast build rule for target.
+objectpool/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/objectpool.dir/build.make examples/muduo_test/CMakeFiles/objectpool.dir/build
+.PHONY : objectpool/fast
+
+# Convenience name for target.
+examples/muduo_test/CMakeFiles/signaltest.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/muduo_test/CMakeFiles/signaltest.dir/rule
+.PHONY : examples/muduo_test/CMakeFiles/signaltest.dir/rule
+
+# Convenience name for target.
+signaltest: examples/muduo_test/CMakeFiles/signaltest.dir/rule
+
+.PHONY : signaltest
+
+# fast build rule for target.
+signaltest/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/signaltest.dir/build.make examples/muduo_test/CMakeFiles/signaltest.dir/build
+.PHONY : signaltest/fast
+
+# Convenience name for target.
 examples/muduo_test/CMakeFiles/test_racecondition.dir/rule:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/muduo_test/CMakeFiles/test_racecondition.dir/rule
 .PHONY : examples/muduo_test/CMakeFiles/test_racecondition.dir/rule
@@ -181,6 +211,102 @@ test_racecondition: examples/muduo_test/CMakeFiles/test_racecondition.dir/rule
 test_racecondition/fast:
 	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/test_racecondition.dir/build.make examples/muduo_test/CMakeFiles/test_racecondition.dir/build
 .PHONY : test_racecondition/fast
+
+# Convenience name for target.
+examples/muduo_test/CMakeFiles/matrix_test.dir/rule:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 examples/muduo_test/CMakeFiles/matrix_test.dir/rule
+.PHONY : examples/muduo_test/CMakeFiles/matrix_test.dir/rule
+
+# Convenience name for target.
+matrix_test: examples/muduo_test/CMakeFiles/matrix_test.dir/rule
+
+.PHONY : matrix_test
+
+# fast build rule for target.
+matrix_test/fast:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/matrix_test.dir/build.make examples/muduo_test/CMakeFiles/matrix_test.dir/build
+.PHONY : matrix_test/fast
+
+matrix_test.o: matrix_test.cpp.o
+
+.PHONY : matrix_test.o
+
+# target to build an object file
+matrix_test.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/matrix_test.dir/build.make examples/muduo_test/CMakeFiles/matrix_test.dir/matrix_test.cpp.o
+.PHONY : matrix_test.cpp.o
+
+matrix_test.i: matrix_test.cpp.i
+
+.PHONY : matrix_test.i
+
+# target to preprocess a source file
+matrix_test.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/matrix_test.dir/build.make examples/muduo_test/CMakeFiles/matrix_test.dir/matrix_test.cpp.i
+.PHONY : matrix_test.cpp.i
+
+matrix_test.s: matrix_test.cpp.s
+
+.PHONY : matrix_test.s
+
+# target to generate assembly for a file
+matrix_test.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/matrix_test.dir/build.make examples/muduo_test/CMakeFiles/matrix_test.dir/matrix_test.cpp.s
+.PHONY : matrix_test.cpp.s
+
+objectpool.o: objectpool.cpp.o
+
+.PHONY : objectpool.o
+
+# target to build an object file
+objectpool.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/objectpool.dir/build.make examples/muduo_test/CMakeFiles/objectpool.dir/objectpool.cpp.o
+.PHONY : objectpool.cpp.o
+
+objectpool.i: objectpool.cpp.i
+
+.PHONY : objectpool.i
+
+# target to preprocess a source file
+objectpool.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/objectpool.dir/build.make examples/muduo_test/CMakeFiles/objectpool.dir/objectpool.cpp.i
+.PHONY : objectpool.cpp.i
+
+objectpool.s: objectpool.cpp.s
+
+.PHONY : objectpool.s
+
+# target to generate assembly for a file
+objectpool.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/objectpool.dir/build.make examples/muduo_test/CMakeFiles/objectpool.dir/objectpool.cpp.s
+.PHONY : objectpool.cpp.s
+
+signaltest.o: signaltest.cpp.o
+
+.PHONY : signaltest.o
+
+# target to build an object file
+signaltest.cpp.o:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/signaltest.dir/build.make examples/muduo_test/CMakeFiles/signaltest.dir/signaltest.cpp.o
+.PHONY : signaltest.cpp.o
+
+signaltest.i: signaltest.cpp.i
+
+.PHONY : signaltest.i
+
+# target to preprocess a source file
+signaltest.cpp.i:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/signaltest.dir/build.make examples/muduo_test/CMakeFiles/signaltest.dir/signaltest.cpp.i
+.PHONY : signaltest.cpp.i
+
+signaltest.s: signaltest.cpp.s
+
+.PHONY : signaltest.s
+
+# target to generate assembly for a file
+signaltest.cpp.s:
+	cd /home/yuanye/WorkSpace/Git/My_Github/muduo/cmake-build-debug && $(MAKE) -f examples/muduo_test/CMakeFiles/signaltest.dir/build.make examples/muduo_test/CMakeFiles/signaltest.dir/signaltest.cpp.s
+.PHONY : signaltest.cpp.s
 
 test.o: test.cpp.o
 
@@ -216,13 +342,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... objectpool"
+	@echo "... signaltest"
+	@echo "... edit_cache"
+	@echo "... test_racecondition"
+	@echo "... matrix_test"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... test_racecondition"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... install"
+	@echo "... matrix_test.o"
+	@echo "... matrix_test.i"
+	@echo "... matrix_test.s"
+	@echo "... objectpool.o"
+	@echo "... objectpool.i"
+	@echo "... objectpool.s"
+	@echo "... signaltest.o"
+	@echo "... signaltest.i"
+	@echo "... signaltest.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

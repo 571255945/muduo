@@ -38,3 +38,27 @@ target_link_libraries(simple_timeclient muduo_net)
 add_executable(simple_chargenclient chargenclient/chargenclient.cc)
 target_link_libraries(simple_chargenclient muduo_net)
 
+add_executable(simple_eventloop01
+        eventloop01/eventloop01.cpp
+        eventloop01/test.cpp)
+target_link_libraries(simple_eventloop01 muduo_net muduo_base)
+
+
+add_executable(simple_eventloop02
+        eventloop02/Channel.cc
+        eventloop02/EventLoop.cc
+        eventloop02/Poller.cc
+        eventloop02/main.cpp)
+target_link_libraries(simple_eventloop02 muduo_net muduo_base)
+
+
+add_executable(simple_eventloop03
+        eventloop03/Channel.cc
+        eventloop03/EventLoop.cc
+        eventloop03/Poller.cc
+        eventloop03/Timer.cc
+        eventloop03/TimerQueue.cc
+        eventloop03/TimerId.h
+        eventloop03/EventLoopThread.cc
+        eventloop03/main.cpp)
+target_link_libraries(simple_eventloop03 muduo_net muduo_base)

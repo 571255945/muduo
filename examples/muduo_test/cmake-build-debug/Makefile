@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matrix_test
+
+# Build rule for target.
+matrix_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix_test
+.PHONY : matrix_test
+
+# fast build rule for target.
+matrix_test/fast:
+	$(MAKE) -f CMakeFiles/matrix_test.dir/build.make CMakeFiles/matrix_test.dir/build
+.PHONY : matrix_test/fast
+
+#=============================================================================
 # Target rules for targets named test_racecondition
 
 # Build rule for target.
@@ -124,6 +137,19 @@ test_racecondition/fast:
 .PHONY : test_racecondition/fast
 
 #=============================================================================
+# Target rules for targets named signaltest
+
+# Build rule for target.
+signaltest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 signaltest
+.PHONY : signaltest
+
+# fast build rule for target.
+signaltest/fast:
+	$(MAKE) -f CMakeFiles/signaltest.dir/build.make CMakeFiles/signaltest.dir/build
+.PHONY : signaltest/fast
+
+#=============================================================================
 # Target rules for targets named objectpool
 
 # Build rule for target.
@@ -135,6 +161,33 @@ objectpool: cmake_check_build_system
 objectpool/fast:
 	$(MAKE) -f CMakeFiles/objectpool.dir/build.make CMakeFiles/objectpool.dir/build
 .PHONY : objectpool/fast
+
+matrix_test.o: matrix_test.cpp.o
+
+.PHONY : matrix_test.o
+
+# target to build an object file
+matrix_test.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix_test.dir/build.make CMakeFiles/matrix_test.dir/matrix_test.cpp.o
+.PHONY : matrix_test.cpp.o
+
+matrix_test.i: matrix_test.cpp.i
+
+.PHONY : matrix_test.i
+
+# target to preprocess a source file
+matrix_test.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix_test.dir/build.make CMakeFiles/matrix_test.dir/matrix_test.cpp.i
+.PHONY : matrix_test.cpp.i
+
+matrix_test.s: matrix_test.cpp.s
+
+.PHONY : matrix_test.s
+
+# target to generate assembly for a file
+matrix_test.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix_test.dir/build.make CMakeFiles/matrix_test.dir/matrix_test.cpp.s
+.PHONY : matrix_test.cpp.s
 
 objectpool.o: objectpool.cpp.o
 
@@ -162,6 +215,33 @@ objectpool.s: objectpool.cpp.s
 objectpool.cpp.s:
 	$(MAKE) -f CMakeFiles/objectpool.dir/build.make CMakeFiles/objectpool.dir/objectpool.cpp.s
 .PHONY : objectpool.cpp.s
+
+signaltest.o: signaltest.cpp.o
+
+.PHONY : signaltest.o
+
+# target to build an object file
+signaltest.cpp.o:
+	$(MAKE) -f CMakeFiles/signaltest.dir/build.make CMakeFiles/signaltest.dir/signaltest.cpp.o
+.PHONY : signaltest.cpp.o
+
+signaltest.i: signaltest.cpp.i
+
+.PHONY : signaltest.i
+
+# target to preprocess a source file
+signaltest.cpp.i:
+	$(MAKE) -f CMakeFiles/signaltest.dir/build.make CMakeFiles/signaltest.dir/signaltest.cpp.i
+.PHONY : signaltest.cpp.i
+
+signaltest.s: signaltest.cpp.s
+
+.PHONY : signaltest.s
+
+# target to generate assembly for a file
+signaltest.cpp.s:
+	$(MAKE) -f CMakeFiles/signaltest.dir/build.make CMakeFiles/signaltest.dir/signaltest.cpp.s
+.PHONY : signaltest.cpp.s
 
 test.o: test.cpp.o
 
@@ -197,12 +277,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... matrix_test"
 	@echo "... test_racecondition"
 	@echo "... edit_cache"
+	@echo "... signaltest"
 	@echo "... objectpool"
+	@echo "... matrix_test.o"
+	@echo "... matrix_test.i"
+	@echo "... matrix_test.s"
 	@echo "... objectpool.o"
 	@echo "... objectpool.i"
 	@echo "... objectpool.s"
+	@echo "... signaltest.o"
+	@echo "... signaltest.i"
+	@echo "... signaltest.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

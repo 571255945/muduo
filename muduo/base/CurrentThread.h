@@ -21,6 +21,10 @@ namespace CurrentThread
 
   inline int tid()
   {
+
+      //__builtin_expect与关键字if一起使用.首先要明确一点就是
+      // if (value) 等价于 if (__builtin_expert(value, x)), 与x的值无关.
+      //这个宏定义的主要作用是进行汇编优化
     if (__builtin_expect(t_cachedTid == 0, 0))
     {
       cacheTid();
